@@ -1,6 +1,12 @@
 title: Pcrab 的日常
 site: https://pcrab.ml
-author: Pcrab
+
+author:
+  self_intro: 一个普通的大学生，爱好计算机，懒
+  github: Pcrab
+  email: pxw0717@gmail.com
+  telegram: Pcrab
+
 menus:
   主页: /
   #分类: /categories

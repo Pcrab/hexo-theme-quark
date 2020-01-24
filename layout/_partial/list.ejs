@@ -3,12 +3,7 @@
 
   <div class="line_1">
     <div class="index_post_date">
-      <%- full_date(post.date, "MMMM Do") %>
-    </div>
-    <div class="index_post_category">
-      <% post.categories.forEach(function(category){ %>
-        「 <%- category.name %> 」
-      <% }) %>
+      「 <%- full_date(post.date, "MMMM Do") %> 」
     </div>
   </div>
 

@@ -23,7 +23,7 @@ html
 body 
   font normal 100% Helvetica, Arial, sans-serif
   word-wrap break-word;
-  margin 5% 20% 0 20%;
+  margin 5% 10% 0 10%;
   height 100%;
   .bgimg
     position fixed
@@ -33,9 +33,14 @@ body
 
 .main 
   height 100%;
-  margin 5% 10% 0 10%;
+  margin 5% 15% 0 15%;
   a
     font normal 1.6em sans-serif;
+
+@media all and (max-width: 700px)
+  body
+    font-size 80%;
+    margin 0;
 
 h1::before,
 h2::before,
