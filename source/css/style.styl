@@ -1,0 +1,49 @@
+@import "_partial/title"
+@import "_partial/tags"
+@import "_partial/footer"
+@import "_partial/post"
+@import "_partial/list"
+@import "_partial/navi"
+@import "_partial/page"
+
+a
+  text-decoration none;
+  color #9FCCFF;
+
+blockquote
+  margin 0.3em 0;
+  padding 0.1em 2em;
+  border-left 0.7em #65BAC6 solid;
+  background-color #231E32;
+
+html 
+  background #100E17;
+  color #FFFFFF;
+
+body 
+  font normal 100% Helvetica, Arial, sans-serif
+  word-wrap break-word;
+  margin 5% 20% 0 20%;
+  height 100%;
+  .bgimg
+    position fixed
+    right 0;
+    top 0;
+    z-index -1;
+
+.main 
+  height 100%;
+  margin 5% 10% 0 10%;
+  a
+    font normal 1.6em sans-serif;
+
+h1::before,
+h2::before,
+h3::before,
+h4::before,
+h5::before,
+h6::before
+  content "#";
+  margin-right 0.5em;
+  color #D8DDF2;
+

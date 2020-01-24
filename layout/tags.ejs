@@ -1,0 +1,12 @@
+<div class="tag_page_title">
+  <%- page.title %>
+</div>
+
+<div class="tags">
+  <% site.tags.forEach(function(tag){ %>
+  <div class="singletag">
+    <a class="tag_link" href="/tags/<%- tag.name %>"><%- tag.name %></a>
+  </div>
+  <% }) %>
+</div>
+<br/><br/><br/><br/><br/><br/>

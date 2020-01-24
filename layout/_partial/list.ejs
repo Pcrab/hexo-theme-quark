@@ -1,0 +1,32 @@
+<% page.posts.forEach(function(post){ %>
+<div class=index_list>
+
+  <div class="line_1">
+    <div class="index_post_date">
+      <%- full_date(post.date, "MMMM Do") %>
+    </div>
+    <div class="index_post_category">
+      <% post.categories.forEach(function(category){ %>
+        「 <%- category.name %> 」
+      <% }) %>
+    </div>
+  </div>
+
+  <a id="index_post_title" href="/<%- post.path %>"><%- post.title %></a><br/>
+
+  <div class="blank">
+  <% post.tags.forEach(function(tag){ %>
+    <a class="index_post_tag" href="/tags/<%- tag.name %>">
+      <%- tag.name %>
+    </a>
+  <% }) %>
+  </div>
+
+  <div class="index_post_excerpt">
+    <%- post.excerpt %>
+  </div>
+
+  <a class="more" href="/<%- post.path %>">阅读更多</a>
+
+</div>
+<% }) %>

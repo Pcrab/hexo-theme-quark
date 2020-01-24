@@ -1,0 +1,15 @@
+title: Pcrab 的日常
+site: https://pcrab.ml
+author: Pcrab
+menus:
+  主页: /
+  #分类: /categories
+  标签: /tags
+  关于: /about
+
+links:
+
+comment:
+  Valine:
+    appid: JYGJAIgDkSKSDgp5pUPfyxoO-MdYXbMMI
+    appkey: T36nhlVVvMa1c33Tee3F13JM
