@@ -1,5 +1,6 @@
 title: Pcrab 的日常
 site: https://pcrab.ml
+favicon: /favicon.ico
 
 author:
   name: Pcrab
@@ -10,12 +11,20 @@ author:
 
 menus:
   主页: /
-  #分类: /categories
   标签: /tags
   关于: /about
   搜索: /search
 
 links:
+
+#仅提供cc协议
+copyright:
+  #显示版权信息，0为关闭，1为对所有post生效，2为对文章中有"copyright: true"的文章才生效
+  open: 1
+  #是否可被商用，0为不可，1为可
+  commercial: 0
+  #是否可被演绎，0为不可，1为在相同方式下可，2为可
+  derivative: 1
 
 comment:
   Valine:
@@ -23,5 +32,8 @@ comment:
     appkey: T36nhlVVvMa1c33Tee3F13JM
 
 
+#网站成立时间，若大于等于当前年份则不会显示
 startYear: 2019
-showTheme: true
+
+#显示页脚主题信息
+showTheme: true 
