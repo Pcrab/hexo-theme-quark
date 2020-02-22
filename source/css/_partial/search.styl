@@ -10,70 +10,42 @@
     border-radius 0.3em
     border 0.1em solid #D14E4E
 
-.local-search-input-cls
-  width 200px;
-  margin 10px 0;
-  padding 8px 12px;
-  border-radius 4px;
-  border 1px solid #CCC;
-  color #666;
-  font-size 14px;
-
 .local-search-result-cls
-  margin 0 auto;
 
   .local-search-empty
-    color #3C3C3C;
+    color #FF4848;
+    margin-bottom 3em
+    font bold 1.5em sans-serif
     line-height 44px;
     text-align center;
     display block;
-    font-size 16px;
-    font-weight normal;
 
-  ul
-    padding 10px 20px;
+  li
+    list-style-type none;
+    text-align left;
+    border-top 1px solid #888888;
+    padding-top 20px;
+    margin-top 20px;
+    line-height 30px;
 
-    li
-      list-style-type none;
-      text-align left;
-      border-top 1px solid #CCC;
-      padding-top 20px;
+    a
+      font bold 2em sans-serif
+      color #3C3C3C;
       margin-top 20px;
-      line-height 30px;
-      font-weight normal;
-      &last-child
-        border-top none;
-        margin-top 0;
+    a:hover
+      color #D14E4E;
 
-      a
-        margin-top 20px;
-        font-size 16px;
+    p
+      font 1em sans-serif
+      margin-top 1em;
 
-      p
-        margin-top 10px;
-        font-size 14px;
-        max-height 124px;
-        overflow hidden;
+    em
+      font-weight bold;
+      font-style normal;
+      color #FF4848;
 
-      em.search-keyword 
-        font-weight bold
-        font-style normal
-        color #e58c7c;
-
-.local-search-plugin 
-  .local-search-input-cls 
-    opacity 0.6;
-    width 160px;
-    transition all 0.3s;
-    &hover 
-      opacity 1;
-      width 200px;
-      transition all 0.3s;
-
-  .icon 
-    position relative;
-    left -30px;
-    color #999;
-    cursor pointer;
-
+  li:first-child
+    padding-top 0;
+    border-top none;
+    margin-top 0;
 
