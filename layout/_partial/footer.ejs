@@ -1,7 +1,7 @@
 <foot id="footer">
   <hr class="boldline"/>
   <p class="center font">
-    Copyright - &copy - <a href="https://pcrab.ml">pcrab</a> - <%- date(Date.now(), 'YYYY') %> - powered by <a href="https://hexo.io/">hexo</a>
+    &copy - <a href="<%- theme.site %>"><%- theme.author.name%></a> - <% if(theme.startYear < date(Date.now(), 'YYYY')){%> <%- theme.startYear %> - <% } %> <%- date(Date.now(), 'YYYY') %> - Powered by <a href="https://hexo.io/">hexo</a> <% if(theme.showTheme) {%> Themed by <a href="https://github.com/pcrab/hexo-theme-quark"> quark </a> <% } %>
   </p>
   <br/>
 </foot>

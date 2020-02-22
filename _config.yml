@@ -2,6 +2,7 @@ title: Pcrab 的日常
 site: https://pcrab.ml
 
 author:
+  name: Pcrab
   self_intro: 一个普通的大学生，爱好计算机，懒
   github: Pcrab
   email: pxw0717@gmail.com
@@ -20,3 +21,7 @@ comment:
   Valine:
     appid: JYGJAIgDkSKSDgp5pUPfyxoO-MdYXbMMI
     appkey: T36nhlVVvMa1c33Tee3F13JM
+
+
+startYear: 2019
+showTheme: true
