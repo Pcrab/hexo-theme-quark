@@ -1,7 +1,8 @@
 title: Pcrab 的日常
 site: https://pcrab.ml
+# favicon.ico 和 icon.png 都存放在 source 文件夹中
 favicon: /favicon.ico
-icon: images/icon.png
+icon: /images/icon.png
 
 author:
   name: Pcrab
