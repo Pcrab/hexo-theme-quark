@@ -4,18 +4,16 @@ site: https://pcrab.ml
 favicon: /favicon.ico
 icon: /images/icon.png
 
+language:
+  - en
+  - zh_cn
+
 author:
   name: Pcrab
   self_intro: 一个普通的大学生，爱好计算机，懒
   github: Pcrab
   email: pxw0717@gmail.com
   telegram: Pcrab
-
-menus:
-  主页: /
-  标签: /tags
-  关于: /about
-  搜索: /search
 
 links:
 

@@ -1,6 +1,8 @@
 <div class="navi">
-<% for ( menu in theme.menus ) { %>
-    <a id="navi_item" href="<%- theme.menus[menu] %>" class="menu-item-link"><%- menu %></a>
-<% } %>
+    <a id="navi_item" href="/#" class="menu-item-link"><%= __("index.title") %></a>
+    <a id="navi_item" href="/tags" class="menu-item-link"><%= __("index.tags") %></a>
+    <a id="navi_item" href="/about" class="menu-item-link"><%= __("index.about") %></a>
+    <a id="navi_item" href="/search" class="menu-item-link"><%= __("index.search") %></a>
 </div>
+
 <hr/>
