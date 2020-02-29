@@ -9,37 +9,39 @@
 @import "_partial/copyright"
 
 a
-  text-decoration none;
-  color #D14E4E;
+    text-decoration none;
+    color #D14E4E;
 a:hover
-  color #FF4848
+    color #FF4848
 
 blockquote
-  margin 0.3em 0;
-  padding 0.1em 2em;
-  border-left 0.6em #D14E4E solid;
-  background-color #F6F0F0;
+    margin 0.3em 0;
+    padding 0.1em 2em;
+    border-left 0.6em #D14E4E solid;
+    background-color #F6F0F0;
 
 html
-  background #F0F0F0;
-  color #3C3C3C;
+    background #F0F0F0;
+    color #3C3C3C;
 
 body
-  font normal 100% Helvetica, Arial, sans-serif
-  word-wrap break-word;
-  margin 5% 10% 0 10%;
-  height 100%;
+    font normal 100% "Noto Sans SC", Helvetica, Arial, sans-serif
+    word-wrap break-word;
+    margin 5% 10% 0 10%;
+    height 100%;
 
 .main
-  height 100%;
-  margin 5% 15% 0 15%;
-  a
-    font normal 1.6em sans-serif;
+    height 100%;
+    margin 5% 15% 0 15%;
+    font-family "Noto Sans SC";
+    a
+        font normal 1.6em "Noto Sans SC", sans-serif;
+
 
 @media all and (max-width: 700px)
-  body
-    font-size 80%;
-    margin 0;
+    body
+        font-size 80%;
+        margin 0;
 
 h1::before,
 h2::before,
@@ -47,7 +49,7 @@ h3::before,
 h4::before,
 h5::before,
 h6::before
-  content "#";
-  margin-right 0.5em;
-  color #3C3C3C;
+    content "#";
+    margin-right 0.5em;
+    color #3C3C3C;
 
