@@ -27,3 +27,35 @@
 
 </div>
 <% }) %>
+
+<div class="page_num">
+
+    <% if ( page.total == 1 ) { %>
+    <% } else { %>
+
+        <% if ( page.prev == 0 ) { %>
+        <% } else if ( page.prev == 1 ) { %>
+            <a class="page_item" href="<%= theme.site%>/<%= page.prev_link %>" ><%= page.prev %></a>
+        <% } else { %>
+            <a class="page_item" href="<%= theme.site%>">1</a>
+            <%if ( page.prev > 2 ) { %>
+                <p>...</p>
+            <% } %>
+            <a class="page_item" href="<%= page.prev_link %>" ><%= page.prev %></a>
+        <% } %>
+
+        <a class="page_item" href="<%= theme.site%>/<%= page.current_url %>" ><%= page.current %></a>
+
+        <% if ( page.next != 0 ) { %>
+            <a class="page_item" href="<%= page.next_link %>" ><%= page.next %></a>
+
+            <% if (page.total - page.next > 1 ) { %>
+                <p>...</p>
+            <% } %>
+            <a class="page_item" href="<%= theme.site%>/page/<%= page.total %>"><%= page.total %></a>
+        <% } %>
+
+
+    <% } %>
+
+</div>

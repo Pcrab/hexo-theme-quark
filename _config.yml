@@ -1,4 +1,5 @@
 title: Pcrab 的日常
+# 最后不要加上斜杠 /
 site: https://pcrab.ml
 # favicon.ico 和 icon.png 都存放在 source 文件夹中
 favicon: /favicon.ico
