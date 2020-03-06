@@ -31,3 +31,13 @@ theme: quark
 7. `comment`: 评论系统支持
 8. `copyright`: 版权支持
 9. `startYear` 以及 `showTheme`: 部分页脚内容自定义
+
+## 插件
+
+请安装下列插件以获得最好的体验：
+
+[hexo-generator-searchdb](https://github.com/theme-next/hexo-generator-searchdb)
+
+[hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)
+
+其他插件请自行安装配置
