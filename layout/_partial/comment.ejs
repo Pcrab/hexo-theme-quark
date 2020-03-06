@@ -1,4 +1,14 @@
 <div id="vcomments"></div>
+<% if (theme.comment.Valine.verify) { %>
+<script>
+  new Valine({
+    el: '#vcomments',
+    appId: '<%- theme.comment.Valine.appid %>',
+    appKey: '<%- theme.comment.Valine.appkey %>',
+    verify: true
+  })
+</script>
+<% } else { %>
 <script>
   new Valine({
     el: '#vcomments',
@@ -6,3 +16,4 @@
     appKey: '<%- theme.comment.Valine.appkey %>'
   })
 </script>
+<% } %>

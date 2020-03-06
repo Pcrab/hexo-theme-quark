@@ -31,6 +31,7 @@ comment:
   Valine:
     appid: JYGJAIgDkSKSDgp5pUPfyxoO-MdYXbMMI
     appkey: T36nhlVVvMa1c33Tee3F13JM
+    verify: true
 
 
 #网站成立时间，若大于等于当前年份则不会显示
