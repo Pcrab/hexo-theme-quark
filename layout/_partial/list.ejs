@@ -41,7 +41,7 @@
             <%if ( page.prev > 2 ) { %>
                 <p>...</p>
             <% } %>
-            <a class="page_item" href="<%= page.prev_link %>" ><%= page.prev %></a>
+            <a class="page_item" href="<%= theme.site %>/<%= page.prev_link %>" ><%= page.prev %></a>
         <% } %>
 
         <a class="page_item" href="<%= theme.site%>/<%= page.current_url %>" ><%= page.current %></a>
