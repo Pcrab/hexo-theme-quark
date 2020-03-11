@@ -47,7 +47,7 @@
         <a class="page_item" href="<%= theme.site%>/<%= page.current_url %>" ><%= page.current %></a>
 
         <% if ( page.next != 0 ) { %>
-            <a class="page_item" href="<%= page.next_link %>" ><%= page.next %></a>
+            <a class="page_item" href="<%= theme.site %>/<%= page.next_link %>" ><%= page.next %></a>
 
             <% if (page.total - page.next > 1 ) { %>
                 <p>...</p>
