@@ -1,19 +1,66 @@
+<% if (theme.comment.Select == "Valine") { %>
+
 <div id="vcomments"></div>
-<% if (theme.comment.Valine.verify) { %>
+
+  <% if (theme.comment.Valine.verify) { %>
+
+  <script>
+    new Valine({
+      el: '#vcomments',
+      appId: '<%- theme.comment.Valine.appid %>',
+      appKey: '<%- theme.comment.Valine.appkey %>',
+      verify: true
+    })
+  </script>
+
+  <% } else { %>
+
+  <script>
+    new Valine({
+      el: '#vcomments',
+      appId: '<%- theme.comment.Valine.appid %>',
+      appKey: '<%- theme.comment.Valine.appkey %>'
+    })
+  </script>
+
+  <% } %>
+
+<% } else if (theme.comment.Select == "Disqus") { %>
+
+<% if (theme.comment.Disqus.needProxy) { %>
+<div id="comment"></div>
+
 <script>
-  new Valine({
-    el: '#vcomments',
-    appId: '<%- theme.comment.Valine.appid %>',
-    appKey: '<%- theme.comment.Valine.appkey %>',
-    verify: true
-  })
+var disq = new iDisqus('comment', {
+    forum: 'pcrab-blog',
+    api: 'https://disqus.pcrab.ml',
+    site: 'https://pcrab.ml',
+    mode: 1,
+    timeout: 3000,
+    init: true
+});
 </script>
-<% } else { %>
+<% } else if (!theme.comment.Disqus.needProxy) { %>
+<div id="disqus_thread"></div>
 <script>
-  new Valine({
-    el: '#vcomments',
-    appId: '<%- theme.comment.Valine.appid %>',
-    appKey: '<%- theme.comment.Valine.appkey %>'
-  })
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://pcrab-blog.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
 </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+<% } %>
 <% } %>

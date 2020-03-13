@@ -4,12 +4,20 @@
   </title>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <% if (theme.favicon){ %>
-    <link rel="shortcut icon" href="<%- theme.favicon %>" />
+  <link rel="shortcut icon" href="<%- theme.favicon %>" />
   <% } %>
+
   <%- css('css/style') %>
   <link href="https://google-fonts.mirrors.sjtug.sjtu.edu.cn/css?family=Noto+Sans+SC&display=swap" rel="stylesheet">
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
 
+  <% if (theme.comment.Select == "Valine") { %>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  <% } else if (theme.comment.Disqus.needProxy) { %>
+  <%- css('css/iDisqus.min.css') %>
+  <%- js('js/iDisqus.min.js') %>
+  <% } %>
+
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
 </head>

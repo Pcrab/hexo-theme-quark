@@ -16,7 +16,6 @@ author:
   email: pxw0717@gmail.com
   telegram: Pcrab
 
-links:
 
 #仅提供cc协议
 copyright:
@@ -27,15 +26,25 @@ copyright:
   #是否可被演绎，0为不可，1为在相同方式下可，2为可
   derivative: 1
 
+# There are two comment framework to be choosen, Valine and Disqus.
 comment:
+  # Please select Disqus or Valine.
+  Select: Disqus
+  # Please visit https://valine.js.org/ to lean how to get appid and appkey.
   Valine:
     appid: JYGJAIgDkSKSDgp5pUPfyxoO-MdYXbMMI
     appkey: T36nhlVVvMa1c33Tee3F13JM
     verify: true
+  # Recommended
+  Disqus:
+    short-name: pcrab-blog
+    # If you need proxy, please visit https://github.com/fooleap/disqus-php-api to learn how to do so.
+    # Important: you need a VPS which can connect to Disqus.
+    needProxy: true
 
 
 #网站成立时间，若大于等于当前年份则不会显示
 startYear: 2019
 
 #显示页脚主题信息
-showTheme: true 
+showTheme: true
