@@ -36,7 +36,7 @@ theme: quark
 
 请安装下列插件以获得最好的体验：
 
-[hexo-generator-searchdb](https://github.com/theme-next/hexo-generator-searchdb)
+[hexo-generator-search](https://github.com/wzpan/hexo-generator-search)
 
 [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)
 
