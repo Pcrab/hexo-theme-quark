@@ -40,4 +40,22 @@ theme: quark
 
 [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)
 
+然后在站点的 config 文件（不是 theme 下的 config）中加入
+
+``` yaml
+search:
+  path: search.xml
+  field: post
+
+feed:
+    type: atom
+    path: atom.xml
+    limit: 20
+    hub:
+    content: true
+    content_limit: 140
+    content_limit_delim: ' '
+    order_by: -date
+```
+
 其他插件请自行安装配置
