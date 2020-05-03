@@ -1,14 +1,22 @@
+# 站点的标题，会在每个页面中都展示出来
+# title of the site, will be displayed on all page
 title: Pcrab 的日常
 # 最后不要加上斜杠 /
+# Do not add "/" at the end
 site: https://pcrab.ml
 # favicon.ico 和 icon.png 都存放在 source 文件夹中
+# "favicon.ico" and "icon.png" are stored in "source" folder
 favicon: /favicon.ico
 icon: /images/icon.png
 
+# 选择站点的语言
+# choose the language of your site
 language:
-  - en
   - zh_cn
+  - en
 
+# 作者简介，内容会显示在 about 页面上
+# author descriptions, all these information will be displayed on about page
 author:
   name: Pcrab
   self_intro: 一个普通的大学生，爱好计算机，懒
@@ -17,34 +25,43 @@ author:
   telegram: Pcrab
 
 
-#仅提供cc协议
+# 仅提供cc协议
+# only proviede cc
 copyright:
-  #显示版权信息，0为关闭，1为对所有post生效，2为对文章中有"copyright: true"的文章才生效
+  # 显示版权信息，0为关闭，1为对所有post生效，2为对文章中有"copyright: true"的文章才生效
   open: 1
-  #是否可被商用，0为不可，1为可
+  # 是否可被商用，0为不可，1为可
   commercial: 0
-  #是否可被演绎，0为不可，1为在相同方式下可，2为可
+  # 是否可被演绎，0为不可，1为在相同方式下可，2为可
   derivative: 1
 
+# 有两种评论系统可选， Valine 和 Disqus
 # There are two comment framework to be choosen, Valine and Disqus.
 comment:
+  # 在此选择要使用的评论系统
   # Please select Disqus or Valine.
   Select: Disqus
+  # 请访问 https://valine.js.org/ 并按照教程来配置使用 Valine 评论系统
   # Please visit https://valine.js.org/ to lean how to get appid and appkey.
   Valine:
     appid: JYGJAIgDkSKSDgp5pUPfyxoO-MdYXbMMI
     appkey: T36nhlVVvMa1c33Tee3F13JM
     verify: true
+  # 推荐使用 Disqus
   # Recommended
   Disqus:
     short-name: pcrab-blog
+    # 如果需要代理，请访问 https://github.com/fooleap/disqus-php-api 来参考配置
+    # 注意，要使用代理，你首先需要一台服务器
     # If you need proxy, please visit https://github.com/fooleap/disqus-php-api to learn how to do so.
     # Important: you need a VPS which can connect to Disqus.
     needProxy: true
 
 
-#网站成立时间，若大于等于当前年份则不会显示
+# 网站成立时间，若大于等于当前年份则不会显示
+# The start year of the site which won't be shown if is beyond current
 startYear: 2019
 
-#显示页脚主题信息
+# 显示页脚主题信息
+# show theme info
 showTheme: true
