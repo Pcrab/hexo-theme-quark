@@ -1,0 +1,54 @@
+@import "_partial/title"
+@import "_partial/tags"
+@import "_partial/footer"
+@import "_partial/post"
+@import "_partial/list"
+@import "_partial/navi"
+@import "_partial/page"
+@import "_partial/search"
+@import "_partial/copyright"
+
+a
+    color #C0C5CE;
+    text-decoration none;
+a:hover
+    color #FF4848
+
+blockquote
+    margin 0.3em 0;
+    padding 0.1em 2em;
+    border-left 0.6em #D14E4E solid;
+    background-color #65737E;
+
+html
+    background #2B303B;
+    color #C0C5CE;
+
+body
+    font normal 100% "Noto Sans SC", Helvetica, Arial, sans-serif
+    word-wrap break-word;
+    margin 5% 10% 0 10%;
+    height 100%;
+
+.main
+    height 100%;
+    margin 5% 15% 0 15%;
+    font-family "Noto Sans SC";
+    a
+        font normal 1.6em "Noto Sans SC", sans-serif;
+
+
+@media all and (max-width: 700px)
+    body
+        font-size 80%;
+        margin 0;
+
+h1::before,
+h2::before,
+h3::before,
+h4::before,
+h5::before,
+h6::before
+    content "#";
+    margin-right 0.5em;
+

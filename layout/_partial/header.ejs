@@ -1,6 +1,6 @@
 <head>
   <title>
-    <%= theme.title %> <% if(page.title){ %> - <%- page.title %> <% } %>
+    <% if(page.title){ %><%- page.title %> - <% } %><%= theme.title %> 
   </title>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,7 +9,8 @@
   <link rel="shortcut icon" href="<%- theme.favicon %>" />
   <% } %>
 
-  <%- css('css/style') %>
+  <% if(theme.dark){ %><%- css('css/style-dark') %>
+  <% } else {%><%- css('css/style') %><%}%>
   <link href="https://google-fonts.mirrors.sjtug.sjtu.edu.cn/css?family=Noto+Sans+SC&display=swap" rel="stylesheet">
 
   <% if (theme.comment.Select == "Valine") { %>

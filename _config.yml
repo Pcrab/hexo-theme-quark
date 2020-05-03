@@ -15,6 +15,10 @@ language:
   - zh_cn
   - en
 
+# 选择是否启用黑色模式
+# choose whether to use dark mode or not
+dark: true
+
 # 作者简介，内容会显示在 about 页面上
 # author descriptions, all these information will be displayed on about page
 author:
