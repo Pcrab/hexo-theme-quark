@@ -22,13 +22,13 @@ theme: quark
 
 `_config.yml` 文件中有着丰富的可配置项，方便个性化配置，包括
 
-3. `icon`: 主页图标支持
-4. `author`: 作者介绍 (即 about 页面)
-5. `menus`: 导航栏菜单
-6. `links`: 友链 (开发中)
-7. `comment`: 评论系统支持
-8. `copyright`: 版权支持
-9. `startYear` 以及 `showTheme`: 部分页脚内容自定义
+1. `icon` 与 `favicon`: 主页图标支持
+2. `author`: 作者介绍 (即 about 页面)
+3. `menus`: 导航栏菜单
+4. `links`: 友链 (开发中)
+5. `comment`: 评论系统支持
+6. `copyright`: 版权支持
+7. `startYear` 以及 `showTheme`: 部分页脚内容自定义
 
 ## 插件
 
