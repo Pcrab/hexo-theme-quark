@@ -22,8 +22,6 @@ theme: quark
 
 `_config.yml` 文件中有着丰富的可配置项，方便个性化配置，包括
 
-1. `title`: 网站标题
-2. `site`: 网站地址
 3. `icon`: 主页图标支持
 4. `author`: 作者介绍 (即 about 页面)
 5. `menus`: 导航栏菜单
