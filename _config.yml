@@ -1,21 +1,11 @@
-# 站点的标题，会在每个页面中都展示出来
-# title of the site, will be displayed on all page
-title: Pcrab 的日常
-# 最后不要加上斜杠 /
-# Do not add "/" at the end
-site: https://pcrab.ml
 # favicon.ico 和 icon.png 都存放在 source 文件夹中
 # "favicon.ico" and "icon.png" are stored in "source" folder
 favicon: /favicon.ico
 icon: /images/icon.png
 
-# 选择站点的语言
-# choose the language of your site
-language: zh_cn
-
 # 选择是否启用黑色模式
 # choose whether to use dark mode or not
-dark: true
+dark: false
 
 # 作者简介，内容会显示在 about 页面上
 # author descriptions, all these information will be displayed on about page
@@ -36,6 +26,8 @@ copyright:
   commercial: 0
   # 是否可被演绎，0为不可，1为在相同方式下可，2为可
   derivative: 1
+
+# Friendlink
 
 # 有两种评论系统可选， Valine 和 Disqus
 # There are two comment framework to be choosen, Valine and Disqus.

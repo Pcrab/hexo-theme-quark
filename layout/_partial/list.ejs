@@ -35,25 +35,25 @@
 
         <% if ( page.prev == 0 ) { %>
         <% } else if ( page.prev == 1 ) { %>
-            <a class="page_item" href="<%= theme.site%>/<%= page.prev_link %>" ><%= page.prev %></a>
+            <a class="page_item" href="<%= config.url%>/<%= page.prev_link %>" ><%= page.prev %></a>
         <% } else { %>
-            <a class="page_item" href="<%= theme.site%>">1</a>
+            <a class="page_item" href="<%= config.url%>">1</a>
             <%if ( page.prev > 2 ) { %>
                 <p>...</p>
             <% } %>
-            <a class="page_item" href="<%= theme.site %>/<%= page.prev_link %>" ><%= page.prev %></a>
+            <a class="page_item" href="<%= config.url %>/<%= page.prev_link %>" ><%= page.prev %></a>
         <% } %>
 
-        <a class="page_item" href="<%= theme.site%>/<%= page.current_url %>" ><%= page.current %></a>
+        <a class="page_item" href="<%= config.url%>/<%= page.current_url %>" ><%= page.current %></a>
 
         <% if ( page.next != 0 ) { %>
-            <a class="page_item" href="<%= theme.site %>/<%= page.next_link %>" ><%= page.next %></a>
+            <a class="page_item" href="<%= config.url %>/<%= page.next_link %>" ><%= page.next %></a>
 
             <% if (page.total - page.next > 1 ) { %>
                 <p>...</p>
             <% } %>
             <% if ( page.total > page.next) { %>
-                <a class="page_item" href="<%= theme.site%>/page/<%= page.total %>"><%= page.total %></a>
+                <a class="page_item" href="<%= config.url%>/page/<%= page.total %>"><%= page.total %></a>
             <% } %>
         <% } %>
 

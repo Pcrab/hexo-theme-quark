@@ -1,6 +1,6 @@
 <head>
   <title>
-    <% if(page.title){ %><%- page.title %> - <% } %><%= theme.title %> 
+    <% if(page.title){ %><%- page.title %> - <% } %><%= config.title %>
   </title>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -13,60 +13,6 @@
   <% } else {%><%- css('css/style') %><%}%>
   <link href="https://google-fonts.mirrors.sjtug.sjtu.edu.cn/css?family=Noto+Sans+SC&display=swap" rel="stylesheet">
 
-  <% if (theme.comment.Select == "Valine") { %>
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-
-  <% if (theme.comment.Valine.verify) { %>
-
-  <script>
-    new Valine({
-      el: '#vcomments',
-      appId: '<%- theme.comment.Valine.appid %>',
-      appKey: '<%- theme.comment.Valine.appkey %>',
-      verify: true
-    })
-  </script>
-
-  <% } else { %>
-
-  <script>
-    new Valine({
-      el: '#vcomments',
-      appId: '<%- theme.comment.Valine.appid %>',
-      appKey: '<%- theme.comment.Valine.appkey %>'
-    })
-  </script>
-
-  <% } %>
-
-  <% } else if (theme.comment.Select == "Disqus") { %>
-  <% if (theme.comment.Disqus.needProxy) { %>
-
-  <%- css('css/iDisqus.min.css') %>
-  <%- js('js/iDisqus.min.js') %>
-
-  <script>
-  var disq = new iDisqus('comment', {
-      forum: 'pcrab-blog',
-      api: 'https://disqus.pcrab.ml',
-      site: 'https://pcrab.ml',
-      mode: 1,
-      timeout: 3000,
-      init: true
-  });
-  </script>
-  <% } else if (!theme.comment.Disqus.needProxy) { %>
-
-  <script>
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://pcrab-blog.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-  </script>
-  <% } %>
-  <% } %>
 
   <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
 </head>
