@@ -59,3 +59,9 @@ startYear: 2019
 # 显示页脚主题信息
 # show theme info
 showTheme: true
+
+# 备案
+beian:
+    enable: true
+    # 备案号
+    no: 

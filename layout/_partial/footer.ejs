@@ -3,5 +3,10 @@
   <p class="center font">
     &copy - <a href="<%- config.url %>"><%- theme.author.name%></a> - <% if(theme.startYear < date(Date.now(), 'YYYY')){%> <%- theme.startYear %> - <% } %> <%- date(Date.now(), 'YYYY') %> - Powered by <a href="https://hexo.io/">hexo</a> <% if(theme.showTheme) {%> Themed by <a href="https://github.com/pcrab/hexo-theme-quark"> quark </a> <% } %>
   </p>
+  <% if (theme.beian.enable) { %>
+  <p>
+    <%= theme.beian.no %>
+  </p>
+  <% } %>
   <br/>
 </foot>
