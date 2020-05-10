@@ -1,7 +1,7 @@
 # favicon.ico 和 icon.png 都存放在 source 文件夹中
 # "favicon.ico" and "icon.png" are stored in "source" folder
-favicon: /favicon.ico
-icon: /images/icon.png
+favicon: favicon.ico
+icon: icon.png
 
 # 选择是否启用黑色模式
 # choose whether to use dark mode or not
