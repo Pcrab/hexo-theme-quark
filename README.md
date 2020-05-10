@@ -4,7 +4,7 @@
 
 ## 介绍
 
-这款主题是一款黑色系的主题，看起来十分稳重，目前还在开发中，还没有加入处评论系统外的任何js。可配置项基本都在 config 文件中有，还有具体例子，使用起来非常简单。主题整合了 Valine 这款优秀的评论系统，防病使用
+这款主题是一款黑色系的主题，看起来十分稳重，目前还在开发中，还没有加入处评论系统外的任何js。可配置项基本都在 config 文件中有，还有具体例子，使用起来非常简单。主题整合了 Valine 与 Disqus 评论系统，方便使用。
 
 ## 安装
 
@@ -17,6 +17,15 @@ git clone https://github.com/Pcrab/hexo-theme-quark quark
 ```yaml
 theme: quark
 ```
+
+如果从之前的升级上来，需要注意修改 `config.yml` 中的 `favicon` 和 `icon`，删除前面的斜杠，`icon` 需要额外删除 images，即修改为类似于
+
+```yml
+favicon: favicon.ico
+icon: icon.png
+```
+
+的样子。
 
 ## 修改
 
