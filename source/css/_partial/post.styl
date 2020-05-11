@@ -5,6 +5,14 @@ post
   font bold 2em "Noto Sans SC", sans-serif;
   text-align: center;
 
+.post_title:after
+  content '';
+  display block;
+  margin 0.2em auto 0;
+  width 100px;
+  height 2px;
+  border-bottom 2px dashed #D14E4E;
+
 #post_content
     font-family "Noto Sans SC", sans-serif;
     img
@@ -13,16 +21,16 @@ post
     a
         font-size 1em;
 
-h1 
+h1
     font-size 1.8em;
 
-h2 
+h2
     font-size 1.6em;
 
 #top
     width 50px
     height 80px
-    background rgba(85, 85, 85, 0.3) none repeat scroll 0% 0%
+    background rgba(161, 161, 161, 0.5) none repeat scroll 0% 0%
     position fixed
     bottom 5%
     right 3%
@@ -35,4 +43,4 @@ h2
         color #3C3C3C
         text-decoration none
     a:hover
-        background-color #FFFFFF
+        background-color #B6B6B6
