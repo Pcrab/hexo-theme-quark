@@ -1,7 +1,7 @@
 index:
   title: Home
-  tags: tags
-  about: about
-  search: search
-  friendlink: friendlink
-  contact: contact
+  tags: Tags
+  about: About
+  search: Search
+  friendlink: Friendlink
+  contact: Contact
