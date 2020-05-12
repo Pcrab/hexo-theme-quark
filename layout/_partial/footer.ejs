@@ -1,7 +1,23 @@
 <foot id="footer">
   <hr class="boldline"/>
+  <br>
+
   <p class="center font">
-    &copy - <a href="<%- config.url %>"><%- theme.author.name%></a> - <% if(theme.startYear < date(Date.now(), 'YYYY')){%> <%- theme.startYear %> - <% } %> <%- date(Date.now(), 'YYYY') %> - Powered by <a href="https://hexo.io/">hexo</a> <% if(theme.showTheme) {%> Themed by <a href="https://github.com/pcrab/hexo-theme-quark"> quark </a> <% } %>
+    <% if (theme.author.github) { %>
+      <a href="https://github.com/<%- theme.author.github %>"><img src="/images/github.png" style="margin: 0 15px; vertical-align: middle; display: inline;"></a>
+    <% } %>
+    
+    <% if (theme.author.email) { %>
+      <a href="mailto:<%- theme.author.email %>"><img src="/images/gmail.png" style="margin: 0 15px; vertical-align: middle; display: inline;"></a>
+    <% } %>
+    
+    <% if (theme.author.telegram) { %>
+      <a href="https://t.me/<%- theme.author.telegram %>"><img src="/images/telegram.png" style="margin: 0 15px; width:36px; vertical-align: middle; display: inline;"></a>
+    <% } %>
+  <p>
+
+  <p class="center font">
+    &copy - <a href="<%- config.url %>"><%- config.author%></a> - <% if(theme.startYear < date(Date.now(), 'YYYY')){%> <%- theme.startYear %> - <% } %> <%- date(Date.now(), 'YYYY') %> - Powered by <a href="https://hexo.io/">Hexo</a> <% if(theme.showTheme) {%> Theme <a href="https://github.com/pcrab/hexo-theme-quark"> Quark </a> <% } %>
   </p>
   <% if (theme.beian.enable) { %>
   <p>
