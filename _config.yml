@@ -50,6 +50,8 @@ comment:
     # If you need proxy, please visit https://github.com/fooleap/disqus-php-api to learn how to do so.
     # Important: you need a VPS which can connect to Disqus.
     needProxy: true
+    proxyUrl: https://disqus.pcrab.ml
+
 
 
 # 网站成立时间，若大于等于当前年份则不会显示

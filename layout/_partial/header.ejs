@@ -48,8 +48,8 @@
   <script>
   var disq = new iDisqus('comment', {
       forum: 'pcrab-blog',
-      api: 'https://disqus.pcrab.ml',
-      site: 'https://pcrab.ml',
+      api: '<%- theme.comment.Disqus.proxyUrl%>',
+      site: '<%- config.url %>',
       mode: 1,
       timeout: 3000,
       init: true
