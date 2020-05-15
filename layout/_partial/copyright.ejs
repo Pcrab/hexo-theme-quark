@@ -1,16 +1,17 @@
-<% if (1 == theme.copyright.open || ( 2 == theme.copyright.open && true == page.copyright) ) { %>
+<% if (1 == theme.copyright.open || ( 2 == theme.copyright.open && page.copyright) ) { %>
 
   <div class="copyright" >
 
     <a class="license-image" rel="license" href="http://creativecommons.org/licenses/by
 <% if ( 0 == theme.copyright.commercial ) { %>-nc<% } %>
 <% if ( 0 == theme.copyright.derivative ) { %>-nd<% } else if ( 1 == theme.copyright.derivative ) { %>-sa<% } %>
-/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
-
-    <div>
+/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by
+<% if ( 0 == theme.copyright.commercial ) { %>-nc<% } %>
+<% if ( 0 == theme.copyright.derivative ) { %>-nd<% } else if ( 1 == theme.copyright.derivative ) { %>-sa<% } %>
+/4.0/80x15.png" />
+    </a>
 
       <p>本作品采用
-
       <a class="license-word-hyper" rel="license" href="http://creativecommons.org/licenses/by
 <% if ( 0 == theme.copyright.commercial ) { %>-nc<% } %>
 <% if ( 0 == theme.copyright.derivative ) { %>-nd<% } else if ( 1 == theme.copyright.derivative ) { %>-sa<% } %>
@@ -19,10 +20,6 @@
 <% if ( 0 == theme.copyright.commercial ) { %>-非商业性使用<% } %>
 <% if ( 0 == theme.copyright.derivative ) { %>-禁止演绎<% } else if ( 1 == theme.copyright.derivative ) { %>-相同方式共享<% } %>
 4.0 国际许可协议</a>
-
       进行许可。</p>
-
-    </div>
-
-    </div>
+  </div>
 <% } %>
