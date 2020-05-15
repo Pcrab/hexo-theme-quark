@@ -38,8 +38,8 @@ comment:
   # 请访问 https://valine.js.org/ 并按照教程来配置使用 Valine 评论系统
   # Please visit https://valine.js.org/ to lean how to get appid and appkey.
   Valine:
-    appid: JYGJAIgDkSKSDgp5pUPfyxoO-MdYXbMMI
-    appkey: T36nhlVVvMa1c33Tee3F13JM
+    appid: appid
+    appkey: appkey
     verify: true
   # 推荐使用 Disqus
   # Recommended
@@ -50,13 +50,13 @@ comment:
     # If you need proxy, please visit https://github.com/fooleap/disqus-php-api to learn how to do so.
     # Important: you need a VPS which can connect to Disqus.
     needProxy: true
-    proxyUrl: https://disqus.pcrab.ml
+    proxyUrl: https://your.proxy.url
 
 
 
 # 网站成立时间，若大于等于当前年份则不会显示
 # The start year of the site which won't be shown if is beyond current
-startYear: 2019
+startYear: 2020
 
 # 显示页脚主题信息
 # show theme info
@@ -66,4 +66,4 @@ showTheme: true
 beian:
     enable: true
     # 备案号
-    no: 
+    no: 沪ICP备12345678号-1
