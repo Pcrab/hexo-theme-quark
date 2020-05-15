@@ -4,4 +4,8 @@ index:
   about: About
   search: Search
   friendlink: Friendlink
-  contact: Contact
+
+post:
+  busuanzi:
+    visit: This post has been read：
+    time: times

@@ -4,4 +4,8 @@ index:
   about: 关于
   search: 搜索
   friendlink: 友链
-  contact: 联系方式
+
+post:
+  busuanzi:
+    visit: 本文总阅读量：
+    time: 次
