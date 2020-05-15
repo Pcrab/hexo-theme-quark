@@ -78,6 +78,6 @@ feed:
 3. `author`: 作者介绍 (即 about 页面)
 4. `friendlinks`: 友链，支持图片说明
 5. `comment`: 评论系统支持，目前有 Valine 与 Disqus
-6. `copyright`: 版权支持，只有
+6. `copyright`: 版权支持，只有 cc
 7. `startYear` 以及 `showTheme`: 部分页脚内容自定义
 8. `beian`: 页脚添加备案号
