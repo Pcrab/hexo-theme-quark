@@ -35,10 +35,8 @@
   <p class="center font">
     &copy - <a href="<%- config.url %>"><%- config.author%></a> - <% if(theme.startYear < date(Date.now(), 'YYYY')){%> <%- theme.startYear %> - <% } %> <%- date(Date.now(), 'YYYY') %> - Powered by <a href="https://hexo.io/">Hexo</a> <% if(theme.showTheme) {%> Theme <a href="https://github.com/pcrab/hexo-theme-quark"> Quark </a> <% } %>
   </p>
-  <% if (theme.beian.enable) { %>
   <p>
-    <a href="http://www.beian.miit.gov.cn"><%= theme.beian.no %></a>
+    <a href="http://www.beian.miit.gov.cn"><%= theme.beian %></a>
   </p>
-  <% } %>
   <br/>
 </foot>
