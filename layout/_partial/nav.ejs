@@ -3,6 +3,9 @@
     <a id="navi_item" href="/tags" class="menu-item-link"><%= __("index.tags") %></a>
     <a id="navi_item" href="/about" class="menu-item-link"><%= __("index.about") %></a>
     <a id="navi_item" href="/search" class="menu-item-link"><%= __("index.search") %></a>
+    <% if (theme.friendlink.enable) {%>
+        <a id="navi_item" href="/friendlink" class="menu-item-link"><%= __("index.friendlink") %></a>
+    <% } %>
 </div>
 
 <hr/>

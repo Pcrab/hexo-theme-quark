@@ -1,0 +1,21 @@
+<%- css('css/friendlink') %>
+<div class="friendlink">
+  <% theme.friendlink.links.forEach(function(link){%>
+    <a href="<%- link.url %>" class="flink_link">
+    <div class="flink_block">
+
+      <div class="flink_word">
+
+        <p class="flink_name"><%- link.name %></p>
+        <p class="flink_desc"><%- link.desc %></p>
+        <p class="flink_url"><%- link.url%></p>
+
+      </div>
+
+      <div class="flink_cover"><img class="flink_img" src="<%- link.cover %>"></div>
+
+    </div>
+    </a>
+  <% }) %>
+</div>
+<%- partial('_partial/comment') %>
