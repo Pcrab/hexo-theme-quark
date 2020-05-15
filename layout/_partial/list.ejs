@@ -30,15 +30,15 @@
 
 <div class="page_num">
 
-    <% if ( page.total == 1 ) { %>
+    <% if ( 1 == page.total ) { %>
     <% } else { %>
 
-        <% if ( page.prev == 0 ) { %>
-        <% } else if ( page.prev == 1 ) { %>
+        <% if ( 0 == page.prev ) { %>
+        <% } else if ( 1 == page.prev ) { %>
             <a class="page_item" href="<%= config.url%>/<%= page.prev_link %>" ><%= page.prev %></a>
         <% } else { %>
             <a class="page_item" href="<%= config.url%>">1</a>
-            <%if ( page.prev > 2 ) { %>
+            <%if ( 2 < page.prev ) { %>
                 <p>...</p>
             <% } %>
             <a class="page_item" href="<%= config.url %>/<%= page.prev_link %>" ><%= page.prev %></a>
@@ -46,10 +46,10 @@
 
         <a class="page_item" href="<%= config.url%>/<%= page.current_url %>" ><%= page.current %></a>
 
-        <% if ( page.next != 0 ) { %>
+        <% if ( 0 != page.next ) { %>
             <a class="page_item" href="<%= config.url %>/<%= page.next_link %>" ><%= page.next %></a>
 
-            <% if (page.total - page.next > 1 ) { %>
+            <% if (1 < page.total - page.next ) { %>
                 <p>...</p>
             <% } %>
             <% if ( page.total > page.next) { %>

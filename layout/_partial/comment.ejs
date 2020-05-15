@@ -1,8 +1,8 @@
-<% if (theme.comment.Select == "Valine") { %>
+<% if ("Valine" == theme.comment.Select ) { %>
 
 <div id="vcomments"></div>
 
-<% } else if (theme.comment.Select == "Disqus") { %>
+<% } else if ("Disqus" == theme.comment.Select ) { %>
 
 <% if (theme.comment.Disqus.needProxy) { %>
 <div id="comment"></div>

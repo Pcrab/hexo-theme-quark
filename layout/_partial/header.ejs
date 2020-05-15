@@ -14,7 +14,7 @@
   <% } else {%><%- css('css/style') %><%}%>
   <link href="https://google-fonts.mirrors.sjtug.sjtu.edu.cn/css?family=Noto+Sans+SC&display=swap" rel="stylesheet">
 
-<% if (theme.comment.Select == "Valine") { %>
+<% if ("Valine" == theme.comment.Select ) { %>
   <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
 
   <% if (theme.comment.Valine.verify) { %>
@@ -40,7 +40,7 @@
 
   <% } %>
 
-  <% } else if (theme.comment.Select == "Disqus") { %>
+  <% } else if ("Disqus" == theme.comment.Select ) { %>
   <% if (theme.comment.Disqus.needProxy) { %>
 
   <%- css('css/disqus/iDisqus.min.css') %>
