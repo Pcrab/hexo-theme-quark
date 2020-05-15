@@ -10,12 +10,17 @@ dark: false
 # 作者简介，内容会显示在 about 页面上
 # author descriptions, all these information will be displayed on about page
 author:
-  name: Pcrab
-  self_intro: 一个普通的大学生，爱好计算机，懒
-  github: Pcrab
-  email: pxw0717@gmail.com
-  telegram: Pcrab
-
+  name: "Pcrab"
+  self_intro: "一个普通的大学生，爱好计算机，懒"
+  social:
+    github: "pcrab"
+    email: "pxw0717@gmail.com"
+    telegram: "Pcrab"
+    instagram: ""
+    twitter: ""
+    weibo: ""
+    zhihu: ""
+    youtube: ""
 
 # 仅提供cc协议
 # only proviede cc
@@ -52,7 +57,13 @@ comment:
     needProxy: true
     proxyUrl: https://your.proxy.url
 
-
+# 友链
+# friendlink
+friendlink:
+  enable: true
+  links:
+    - { name: "Pcrab 的日常", url: "https://pcrab.ml", desc: "一个懒人的小站点", cover: "/images/icon.png"}
+    - { name: "Sukoshi", url: "https://sukoshi.xyz/", desc: "十八岁基层程序猿想做涩影狮", cover: "https://s.gravatar.com/avatar/2d6b803eea37de0257620d5fabee7e64?s=200&r=g&d=retro" }
 
 # 网站成立时间，若大于等于当前年份则不会显示
 # The start year of the site which won't be shown if is beyond current
@@ -62,8 +73,10 @@ startYear: 2020
 # show theme info
 showTheme: true
 
+# 不蒜子网页统计
+# busuanzi
+busuanzi:
+  enable: true
+
 # 备案
 beian:
-    enable: true
-    # 备案号
-    no: 沪ICP备12345678号-1
