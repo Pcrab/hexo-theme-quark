@@ -1,37 +1,20 @@
+<%- css('css/page') %>
 <post>
 
   <br/><br/>
 
   <div id="page_content">
+
+  <h1><%= __("index.about") %></h1>
+
     <blockquote>
       <br/>
       <%- theme.author.self_intro %><br/>
       <br/>
     </blockquote>
 
-    <br/>
-
-    <h2><%= __("index.contact") %></h2>
-
-<% if (theme.author.github) { %>
-    <span><img src="/images/github.png" style="margin: 0 15px; vertical-align: middle; display: inline;">github: <a href="https://github.com/<%- theme.author.github %>"><%- theme.author.github %></a></span>
-    <br/>
-    <br/>
-<% } %>
-
-<% if (theme.author.email) { %>
-    <span><img src="/images/gmail.png" style="margin: 0 15px; vertical-align: middle; display: inline;">email: <a href="mailto:<%- theme.author.email %>"><%- theme.author.email %></a></span>
-    <br/>
-    <br/>
-<% } %>
-
-<% if (theme.author.telegram) { %>
-    <span><img src="/images/telegram.png" style="margin: 0 15px; width:36px; vertical-align: middle; display: inline;">telegram: <a href="https://t.me/<%- theme.author.telegram %>"><%- theme.author.telegram %></a></span>
-    <br/><br/>
-<% } %>
-
-  <br/>
     <%- page.content %>
+
   </div>
 
   <br/><br/><br/>

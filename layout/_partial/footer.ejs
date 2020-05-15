@@ -3,19 +3,35 @@
   <br>
 
   <p class="center font">
-    <% if (theme.author.github) { %>
-      <a href="https://github.com/<%- theme.author.github %>"><img src="/images/github.png" style="margin: 0 15px; vertical-align: middle; display: inline;"></a>
+    <% if (theme.author.social.github) { %>
+      <%- partial('_svg/github') %>
     <% } %>
-    
-    <% if (theme.author.email) { %>
-      <a href="mailto:<%- theme.author.email %>"><img src="/images/gmail.png" style="margin: 0 15px; vertical-align: middle; display: inline;"></a>
+    <% if (theme.author.social.email) { %>
+      <%- partial('_svg/email') %>
     <% } %>
-    
-    <% if (theme.author.telegram) { %>
-      <a href="https://t.me/<%- theme.author.telegram %>"><img src="/images/telegram.png" style="margin: 0 15px; width:36px; vertical-align: middle; display: inline;"></a>
+    <% if (theme.author.social.telegram) { %>
+      <%- partial('_svg/telegram') %>
+    <% } %>
+    <% if (theme.author.social.instagram) { %>
+      <%- partial('_svg/instagram') %>
+    <% } %>
+    <% if (theme.author.social.twitter) { %>
+      <%- partial('_svg/twitter') %>
+    <% } %>
+    <% if (theme.author.social.youtube) { %>
+      <%- partial('_svg/youtube') %>
+    <% } %>
+    <% if (theme.author.social.facebook) { %>
+      <%- partial('_svg/facebook') %>
+    <% } %>
+    <% if (theme.author.social.weibo) { %>
+      <%- partial('_svg/weibo') %>
+    <% } %>
+    <% if (theme.author.social.zhihu) { %>
+      <%- partial('_svg/zhihu') %>
     <% } %>
   <p>
-
+  <br>
   <p class="center font">
     &copy - <a href="<%- config.url %>"><%- config.author%></a> - <% if(theme.startYear < date(Date.now(), 'YYYY')){%> <%- theme.startYear %> - <% } %> <%- date(Date.now(), 'YYYY') %> - Powered by <a href="https://hexo.io/">Hexo</a> <% if(theme.showTheme) {%> Theme <a href="https://github.com/pcrab/hexo-theme-quark"> Quark </a> <% } %>
   </p>
