@@ -32,8 +32,6 @@ copyright:
   # 是否可被演绎，0为不可，1为在相同方式下可，2为可
   derivative: 1
 
-# Friendlink
-
 # 有两种评论系统可选， Valine 和 Disqus
 # There are two comment framework to be choosen, Valine and Disqus.
 comment:
@@ -80,3 +78,5 @@ busuanzi:
 
 # 备案
 beian:
+
+rss: true
