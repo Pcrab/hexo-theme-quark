@@ -1,10 +1,10 @@
-> 之前我的 blog 使用的是别人写的一款比较简洁的主题，感觉看起来还是非常不错的，但是具体使用的过程中还是会发现存在一定的问题，比如夜间模式的黑色背景没有填满整个页面，评论系统无法显示，缺少回到顶部按钮之类的，而且修改起来也因为不是自己写的而无法很快定位需要修改的地方，因此决定自己写一款属于自己的主题。
+> 之前在使用 Hexo 的时候尝试了不少主题，但都不是特别满意，因此就自己写了这款主题，希望能够喜欢。
 
 ![screenshot](source/images/A-Quark.png)
 
 ## 介绍
 
-这款主题是一款黑色系的主题，看起来十分稳重，目前还在开发中，还没有加入处评论系统外的任何js。可配置项基本都在 config 文件中有，还有具体例子，使用起来非常简单。主题整合了 Valine 与 Disqus 评论系统，方便使用。
+这款主题是一款非常简洁的主题，前还在开发中。可配置项在 config 文件中都有，每项也有注释说明，使用起来非常简单友好。主题整合了 Valine 与 Disqus 评论系统，方便使用。
 
 ## 安装
 
@@ -12,48 +12,50 @@
 git clone https://github.com/Pcrab/hexo-theme-quark quark
 ```
 
-同时记得将**主目录**下的 `_config.yml_` 文件中的 theme 修改为 quark
+同时记得将**主目录**下的 `_config.yml` 文件中的 theme 修改为 quark
 
 ```yaml
 theme: quark
 ```
 
-如果从之前的升级上来，需要注意修改 `config.yml` 中的 `favicon` 和 `icon`，删除前面的斜杠，`icon` 需要额外删除 images，即修改为类似于
+要注意修改主题的 `_config.yml` 中的 `author` 部分的内容，同时记得如果有备案号也要填写。如果要使用 Valine ，需要注册 leancloud 的账号，这里推荐使用 [国际版](https://leancloud.app/) ，域名无需备案。如果使用的是 Disqus，可以考虑配置反代，不过需要自己的服务器并且有一定的动手能力。
 
-```yml
-favicon: favicon.ico
-icon: icon.png
+主题定制了标签，关于，搜索，友链这四个页面，如果需要使用的话，需要首先创建这四个页面
+
+```bash
+hexo new page tags
 ```
 
-的样子。
+并修改成对应的 layout
 
-## 修改
+```yaml
+layout: tags
+```
 
-`_config.yml` 文件中有着丰富的可配置项，方便个性化配置，包括
+其他几个页面也需要通过相同的步骤创建。
 
-1. `icon` 与 `favicon`: 主页图标支持
-2. `author`: 作者介绍 (即 about 页面)
-3. `menus`: 导航栏菜单
-4. `links`: 友链 (开发中)
-5. `comment`: 评论系统支持
-6. `copyright`: 版权支持
-7. `startYear` 以及 `showTheme`: 部分页脚内容自定义
+如果创建了搜索页面，则同时需要安装 [hexo-generator-search](https://github.com/wzpan/hexo-generator-search) 这款插件。
 
-## 插件
+```bash
+yarn add hexo-generator-search
+```
 
-请安装下列插件以获得最好的体验：
+然后修改博客根目录下的 `_config.yml`
 
-[hexo-generator-search](https://github.com/wzpan/hexo-generator-search)
-
-[hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)
-
-然后在站点的 config 文件（不是 theme 下的 config）中加入
-
-``` yaml
+```yaml
 search:
   path: search.xml
-  field: post
+```
 
+如果打开了 rss 功能，那么还需要安装 [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed) 插件来生成。
+
+```bash
+yarn add hexo-generator-feed
+```
+
+同样也需要修改根目录下的 `_config.yml`
+
+```yaml
 feed:
     type: atom
     path: atom.xml
@@ -65,4 +67,17 @@ feed:
     order_by: -date
 ```
 
-其他插件请自行安装配置
+其他请按情况修改配置。
+
+## 亮点
+
+`_config.yml` 文件中有着丰富的可配置项，方便个性化配置，包括
+
+1. `icon` 与 `favicon`: 切换主页图标
+2. `dark`: 夜间模式开关
+3. `author`: 作者介绍 (即 about 页面)
+4. `friendlinks`: 友链，支持图片说明
+5. `comment`: 评论系统支持，目前有 Valine 与 Disqus
+6. `copyright`: 版权支持，只有
+7. `startYear` 以及 `showTheme`: 部分页脚内容自定义
+8. `beian`: 页脚添加备案号
