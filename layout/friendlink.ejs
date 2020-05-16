@@ -1,4 +1,10 @@
+<%- css('css/post') %>
 <%- css('css/friendlink') %>
+
+<div id="post_content">
+  <%- page.content %>
+</div>
+
 <div class="friendlink">
   <% theme.friendlink.links.forEach(function(link){%>
     <a href="<%- link.url %>" class="flink_link">
