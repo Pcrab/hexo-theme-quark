@@ -3,7 +3,6 @@
 @import "_partial/list"
 @import "_partial/navi"
 @import "_partial/copyright"
-@import "_partial/comment"
 
 a
     text-decoration none;
@@ -30,8 +29,6 @@ body
 .main
     height 100%;
     margin 5% 15% 0 15%;
-    a
-        font normal 1.6em "Noto Sans SC", sans-serif;
 
 
 @media all and (max-width: 700px)
@@ -57,6 +54,15 @@ h5,
 h6
     font-weight bold;
     margin 1em auto;
+
+ul
+    list-style disc inside;
+
+ol
+    list-style upper-greek inside;
+
+ul,ol
+    margin 1em;
 
 #top
     width 50px;
