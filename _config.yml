@@ -60,7 +60,7 @@ comment:
 friendlink:
   enable: true
   links:
-    - { name: "Pcrab 的日常", url: "https://pcrab.ml", desc: "一个懒人的小站点", cover: "/images/icon.png"}
+    - { name: "LJY's Blog", url: "https://blog.ljyngup.com", cover: "https://ljyngupdownload.oss-cn-hangzhou.aliyuncs.com/2018/07/LJYblog-300x300.jpg"}
     - { name: "Sukoshi", url: "https://sukoshi.xyz/", desc: "十八岁基层程序猿想做涩影狮", cover: "https://s.gravatar.com/avatar/2d6b803eea37de0257620d5fabee7e64?s=200&r=g&d=retro" }
 
 # 网站成立时间，若大于等于当前年份则不会显示
