@@ -53,7 +53,7 @@ comment:
     # If you need proxy, please visit https://github.com/fooleap/disqus-php-api to learn how to do so.
     # Important: you need a VPS which can connect to Disqus.
     needProxy: true
-    proxyUrl: https://your.proxy.url
+    proxyUrl: https://disqus.pcrab.ml
 
 # 友链
 # friendlink
