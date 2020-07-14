@@ -49,7 +49,7 @@
 
   <script>
   var disq = new iDisqus('comment', {
-      forum: 'pcrab-blog',
+      forum: '<%- theme.comment.Disqus.short-name%>',
       api: '<%- theme.comment.Disqus.proxyUrl%>',
       site: '<%- config.url %>',
       mode: 1,
