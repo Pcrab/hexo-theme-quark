@@ -41,9 +41,8 @@ comment:
   # 请访问 https://valine.js.org/ 并按照教程来配置使用 Valine 评论系统
   # Please visit https://valine.js.org/ to lean how to get appid and appkey.
   Valine:
-    appid: appid
-    appkey: appkey
-    verify: true
+    appid: p6jLbLI9pP3OznWGhHw1Ibx5-MdYXbMMI
+    appkey: eQABj5D3XtuY20s7WWLcpxAU
   # 推荐使用 Disqus
   # Recommended
   Disqus:
@@ -52,7 +51,7 @@ comment:
     # 注意，要使用代理，你首先需要一台服务器
     # If you need proxy, please visit https://github.com/fooleap/disqus-php-api to learn how to do so.
     # Important: you need a VPS which can connect to Disqus.
-    needProxy: true
+    needProxy: false
     proxyUrl: https://disqus.pcrab.xyz
 
 # 友链
