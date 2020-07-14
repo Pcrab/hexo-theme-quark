@@ -47,7 +47,7 @@ comment:
   # 推荐使用 Disqus
   # Recommended
   Disqus:
-    short-name: pcrab-blog
+    shortname: pcrab-blog
     # 如果需要代理，请访问 https://github.com/fooleap/disqus-php-api 来参考配置
     # 注意，要使用代理，你首先需要一台服务器
     # If you need proxy, please visit https://github.com/fooleap/disqus-php-api to learn how to do so.
