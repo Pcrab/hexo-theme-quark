@@ -41,8 +41,8 @@ comment:
   # 请访问 https://valine.js.org/ 并按照教程来配置使用 Valine 评论系统
   # Please visit https://valine.js.org/ to lean how to get appid and appkey.
   Valine:
-    appid: p6jLbLI9pP3OznWGhHw1Ibx5-MdYXbMMI
-    appkey: eQABj5D3XtuY20s7WWLcpxAU
+    appid:
+    appkey:
   # 推荐使用 Disqus
   # Recommended
   Disqus:
@@ -56,11 +56,11 @@ comment:
     # here is your proxy server's domain
     proxyUrl: https://disqus.pcrab.xyz
   LiveRe:
-    datauid: MTAyMC81MTAyMi8yNzUwNA==
+    datauid:
   Gitalk:
     clientID: 
     clientSecret: 
-    owner: 
+    owner:
     repo:
   Commento:
     # 输入自建时使用的域名，如果使用的是官方版本，应为https://cdn.commento.io，最后不要加斜杠
