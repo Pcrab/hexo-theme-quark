@@ -14,7 +14,7 @@ author:
   self_intro: "一个普通的大学生，爱好计算机，懒"
   social:
     github: "pcrab"
-    email: "pxw0717@gmail.com"
+    email: "pcrab@mailbox.org"
     telegram: "Pcrab"
     instagram: ""
     twitter: ""
@@ -48,11 +48,32 @@ comment:
   Disqus:
     shortname: pcrab-blog
     # 如果需要代理，请访问 https://github.com/fooleap/disqus-php-api 来参考配置
-    # 注意，要使用代理，你首先需要一台服务器
+    # 注意，要使用代理，你首先需要一台能够访问 Disqus 的服务器
     # If you need proxy, please visit https://github.com/fooleap/disqus-php-api to learn how to do so.
     # Important: you need a VPS which can connect to Disqus.
-    needProxy: false
+    needProxy: true
+    # 此处填写你的反代服务器的域名
+    # here is your proxy server's domain
     proxyUrl: https://disqus.pcrab.xyz
+  LiveRe:
+    datauid: MTAyMC81MTAyMi8yNzUwNA==
+  Gitalk:
+    clientID: 
+    clientSecret: 
+    owner: 
+    repo:
+  Vssue:
+    platform: github
+    clientID: b47203220aacd3d91ea4
+    clientSecret: bbd9ae51d60676f1dbdc389075dbbcb96bd14d86
+    repo: Vssue
+    owner: Pcrab
+  Commento:
+    # 输入自建时使用的域名，如果使用的是官方版本，应为https://cdn.commento.io，最后不要加斜杠
+    # Please use your domain if you are self hosted. If you use the cloud service, the domain is https://cdn.commento.io, with no / at the end.
+    domain: https://commento.pcrab.xyz
+
+
 
 # 友链
 # friendlink

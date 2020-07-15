@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="https://unpkg.com/vssue/dist/vssue.min.css">
+<div id="vssue"></div>
+<script src="https://unpkg.com/vue/dist/vue.runtime.min.js"></script>
+<script src="https://unpkg.com/vssue/dist/vssue.<%- theme.comment.Vssue.platform %>.min.js"></script>
+<script>
+    new Vue({
+      el: '#vssue',
+
+      render: h => h('Vssue', {
+        props: {
+          // 在这里设置当前页面对应的 Issue 标题
+          title: 'Vssue Comment',
+
+          // 在这里设置你使用的平台的 OAuth App 配置
+          options: {
+            owner: '<%- theme.comment.Vssue.owner %>',
+            repo: '<%- theme.comment.Vssue.repo %>',
+            clientId: '<%- theme.comment.Vssue.clientID %>',
+            clientSecret: '<%- theme.comment.Vssue.clientSecret %>',
+            autoCreateIssue: true,
+          },
+        }
+      })
+    })
+  </script>

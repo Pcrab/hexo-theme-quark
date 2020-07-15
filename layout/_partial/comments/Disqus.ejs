@@ -1,0 +1,30 @@
+<% if (theme.comment.Disqus.needProxy) { %>
+
+<%- css('css/disqus/iDisqus.min.css') %>
+<div id="comment"></div>
+<%- js('js/iDisqus.min.js') %>
+
+<script>
+var disq = new iDisqus('comment', {
+    forum: '<%- theme.comment.Disqus.shortname%>',
+    api: '<%- theme.comment.Disqus.proxyUrl%>',
+    site: '<%- config.url %>',
+    mode: 1,
+    timeout: 3000,
+    init: true
+});
+</script>
+<% } else if (!theme.comment.Disqus.needProxy) { %>
+
+<div id="disqus_thread"></div>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+<script>
+  (function() { // DON'T EDIT BELOW THIS LINE
+  var d = document, s = d.createElement('script');
+  s.src = 'https://pcrab-blog.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+  })();
+</script>
+<% } %>
