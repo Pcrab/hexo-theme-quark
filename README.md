@@ -1,3 +1,5 @@
+# README
+
 > 之前在使用 Hexo 的时候尝试了不少主题，但都不是特别满意，因此就自己写了这款主题，希望能够喜欢。
 
 ![screenshot](source/images/A-Quark.png)
