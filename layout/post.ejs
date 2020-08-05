@@ -7,6 +7,12 @@
 
   <br/><br/>
 
+  <% if (theme.syntax.enable) { %>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.2/build/styles/<%= theme.syntax.theme %>.min.css">
+  <script src="/js/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <% } %>
+
   <div id="post_content">
     <%- page.content %>
   </div>

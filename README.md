@@ -69,6 +69,22 @@ feed:
     order_by: -date
 ```
 
+要使用代码高亮，请首先访问 [该网站](https://highlightjs.org/download/) 并选择自己需要高亮的语言以获取最佳的体验。下载下来的压缩包中找到 `highlight.pack.js` 文件，将其重命名为 `highlight.min.js` 后替换放入 `/source/js/` 文件夹下，然后关闭自带的 `highlight`。
+
+```yaml
+highlight:
+    enable: false
+```
+
+如果需要其他主题高亮，可以访问 [这里](https://highlightjs.org/static/demo/) 参考配置主题，并修改 `_config.yml` 中的配置。
+
+```yaml
+syntax:
+  enable: true
+  global: true
+  theme: xcode
+```
+
 其他请按情况修改配置。
 
 ## 亮点
@@ -83,3 +99,4 @@ feed:
 6. `copyright`: 版权支持，只有 cc
 7. `startYear` 以及 `showTheme`: 部分页脚内容自定义
 8. `beian`: 页脚添加备案号
+9.  `syntax`: 使用 highlight.js 支持代码高亮

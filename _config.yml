@@ -1,3 +1,6 @@
+# 在使用前请先阅读 README.md
+# Please read README.md before use this theme
+
 # favicon.ico 和 icon.png 都存放在 source 文件夹中
 # "favicon.ico" and "icon.png" are stored in "source" folder
 favicon: favicon.ico
@@ -34,6 +37,15 @@ copyright:
   # 是否可被演绎，0为不可，1为在相同方式下可，2为可
   # whether can be changed, 0 for no, 2 for ok, 1 for ok in the same circumstance
   derivative: 1
+
+# 使用的是 highlight.js 的 xcode 主题，我只选配了我个人使用的一些语言，建议根据自己的需要在 https://highlightjs.org/download/ 中选择自己需要的并替换 js 文件
+# Using highlight.js xcode theme, and I only select some of my using languages. It is highly recommended to select your own languages on https://highlightjs.org/download/ and replace the default js file.
+syntax:
+  enable: true
+  # 默认只在 post 中加载，如果需要全局加载可以将 global 设置为 true
+  # Only load in post in default, if you need to enable it globally, you can set global to true
+  global: true
+  theme: xcode
 
 comment:
   # 在此选择要使用的评论系统
