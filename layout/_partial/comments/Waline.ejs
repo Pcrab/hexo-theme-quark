@@ -1,0 +1,9 @@
+<script src="//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js"></script>
+<div id="waline"></div>
+  <script>
+    Waline({
+      el: '#waline',
+      serverURL: <%- theme.comment.Waline.serverURL %>,
+      visitor: <%- theme.comment.Waline.visitor %>,
+    });
+  </script>

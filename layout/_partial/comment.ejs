@@ -1,5 +1,7 @@
 <% if ("Valine" == theme.comment.Select ) { %>
   <%- partial('comments/Valine') %>
+<% } else if ("Waline" == theme.comment.Select ) { %>
+  <%- partial('comments/Waline') %>
 <% } else if ("Disqus" == theme.comment.Select ) { %>
   <%- partial('comments/Disqus') %>
 <% } else if ("LiveRe" == theme.comment.Select ) { %>
