@@ -1,9 +1,11 @@
 let searchFunc = function (path, search_id, content_id) {
   // 0x00. environment initialization
   'use strict';
+  let nfound = document.getElementById("nfound").innerHTML
+  let ninit = document.getElementById("ninit").innerHTML
   let $input = document.getElementById(search_id);
   let $resultContent = document.getElementById(content_id);
-  $resultContent.innerHTML = "<ul><span class='local-search-empty'>首次搜索，正在载入索引文件，请稍后……<span></ul>";
+  $resultContent.innerHTML = "<ul><span class='local-search-empty'>" + ninit + "<span></ul>";
   $.ajax({
     // 0x01. load xml file
     url: path,
@@ -99,7 +101,7 @@ let searchFunc = function (path, search_id, content_id) {
         });
         str += "</ul>";
         if (str.indexOf('<li>') === -1) {
-          return $resultContent.innerHTML = "<ul><span class='local-search-empty'>没有找到内容，请尝试更换检索词。<span></ul>";
+          return $resultContent.innerHTML = "<ul><span class='local-search-empty'>" + nfound + "<span></ul>";
         }
         $resultContent.innerHTML = str;
       });

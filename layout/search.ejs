@@ -6,9 +6,12 @@
 </form>
 <div id="local-search-result" class="local-search-result-cls"></div>
 
+<div hidden id="nfound"><%= __("search.nfound") %></div>
+<div hidden id="ninit"><%= __("search.ninit") %></div>
 <%- js('js/search.js') %>
 <script type="text/javascript" id="local.search.active">
   var inputArea       = document.querySelector("#local-search-input");
   getSearchFile();
   inputArea.onkeydown = function(){ if(event.keyCode == 13) return false }
 </script>
+

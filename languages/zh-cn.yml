@@ -9,3 +9,7 @@ post:
   busuanzi:
     visit: 本文总阅读量：
     time: 次
+
+search:
+  nfound: 没有找到内容，请尝试更换检索词。
+  ninit: 首次搜索，正在载入索引文件，请稍后……

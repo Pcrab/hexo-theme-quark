@@ -9,3 +9,7 @@ post:
   busuanzi:
     visit: This post has been read：
     time: times
+
+search:
+  nfound: Result not found, please change the word...
+  ninit: Loading index file, please wait...
