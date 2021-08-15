@@ -46,6 +46,7 @@ syntax:
   # Only load in post in default, if you need to enable it globally, you can set global to true
   global: true
   theme: xcode
+  linenumber: true
 
 comment:
   # 在此选择要使用的评论系统

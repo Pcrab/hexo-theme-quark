@@ -11,6 +11,10 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.2/build/styles/<%= theme.syntax.theme %>.min.css">
   <script src="/js/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
+  <% if (theme.syntax.enable) { %>
+    <script src="//cdn.jsdelivr.net/npm/highlightjs-line-numbers.js/dist/highlightjs-line-numbers.min.js"></script>
+    <script>hljs.initLineNumbersOnLoad();</script>
+  <% } %>
   <% } %>
 
   <div id="post_content">
