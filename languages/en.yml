@@ -13,3 +13,13 @@ post:
 search:
   nfound: Result not found, please change the word...
   ninit: Loading index file, please wait...
+
+cc:
+  front: This work is licensed under a
+  main: Creative Commons
+  by: Attribution
+  nc: NonCommercial
+  sa: ShareAlike
+  nd: NoDerivatives
+  lend: 4.0 International License
+  end: .
