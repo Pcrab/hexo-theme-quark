@@ -9,11 +9,13 @@
   <link rel="shortcut icon" href="/<%- theme.favicon %>" />
   <% } %>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
   <%- css('css/utils/clear') %>
   <% if(theme.dark){ %><%- css('css/style-dark') %>
   <% } else {%><%- css('css/style') %><%}%>
-
-  <link href="https://google-fonts.mirrors.sjtug.sjtu.edu.cn/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
   <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
   <link href="https://cdn.bootcss.com/highlight.js/9.15.6/styles/<%= config.highlight.theme || 'default' %>.min.css" rel="stylesheet">
