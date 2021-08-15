@@ -42,9 +42,6 @@ copyright:
 # Using highlight.js xcode theme, and I only select some of my using languages. It is highly recommended to select your own languages on https://highlightjs.org/download/ and replace the default js file.
 syntax:
   enable: true
-  # 默认只在 post 中加载，如果需要全局加载可以将 global 设置为 true
-  # Only load in post in default, if you need to enable it globally, you can set global to true
-  global: true
   theme: xcode
   linenumber: true
 
