@@ -52,8 +52,8 @@ comment:
   # 请访问 https://valine.js.org/ 并按照教程来配置使用 Valine 评论系统
   # Please visit https://valine.js.org/ to lean how to get appid and appkey
   Valine:
-    appid: 9AaAihTp8toKHdarNTGPECXE-MdYXbMMI
-    appkey: HUqCC6V8Difk8QVuDP5t00hs
+    appid: blabla
+    appkey: blabla
   Waline:
     serverURL: ""
     visitor: true
@@ -70,7 +70,7 @@ comment:
     # here is your proxy server's domain. Please use your own server, don't directly use mine, as its impossible for you to use
     proxyUrl: https://disqus.pcrab.xyz
   LiveRe:
-    datauid: MTAyMC81MTAyMi8yNzUwNA==
+    datauid: blabla
   Gitalk:
     clientID: 
     clientSecret: 
