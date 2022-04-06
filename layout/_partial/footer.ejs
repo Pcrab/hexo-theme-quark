@@ -30,7 +30,7 @@
     <% if (theme.author.zhihu) { %>
     <%- partial('_svg/zhihu') %>
     <% } %>
-    <% if (theme.rss) { %>
+    <% if (config.feed.enable) { %>
     <%- partial('_svg/rss') %>
     <% } %>
   <p>
