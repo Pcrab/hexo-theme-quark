@@ -1,83 +1,95 @@
-@import "_partial/title"
-@import "_partial/footer"
-@import "_partial/list"
-@import "_partial/navi"
-@import "_partial/copyright"
+@import '_partial/title';
+@import '_partial/footer';
+@import '_partial/list';
+@import '_partial/navi';
+@import '_partial/copyright';
 
-a
-    text-decoration none;
-    color #D14E4E;
-a:hover
-    color #FF4848
+a {
+    text-decoration: none;
+    color: #D14E4E;
+}
 
-blockquote
-    margin 0.3em 0;
-    padding 0.1em 2em;
-    border-left 0.6em #D14E4E solid;
-    background-color #F6F0F0;
+a:hover {
+    color: #FF4848;
+}
 
-html
-    background #F0F0F0;
-    color #3C3C3C;
+blockquote {
+    margin: 0.3em 0;
+    padding: 0.1em 2em;
+    border-left: 0.6em #D14E4E solid;
+    background-color: #F6F0F0;
+}
 
-body
-    font normal 100% "Noto Sans SC", Helvetica, Arial, sans-serif
-    word-wrap break-word;
-    margin 5% 10% 0 10%;
-    height 100%;
+html {
+    background: #F0F0F0;
+    color: #3C3C3C;
+}
 
-.main
-    height 100%;
-    margin 5% 15% 0 15%;
+body {
+    font: normal 100% 'Noto Sans SC', Helvetica, Arial, sans-serif;
+    word-wrap: break-word;
+    margin: 5% 10% 0 10%;
+    height: 100%;
+}
 
+.main {
+    height: 100%;
+    margin: 5% 15% 0 15%;
+}
 
-@media all and (max-width: 700px)
-    body
-        font-size 80%;
-        margin 0;
+@media all and (max-width: 700px) {
+    body {
+        font-size: 80%;
+        margin: 0;
+    }
+}
 
-h1::before,
-h2::before,
-h3::before,
-h4::before,
-h5::before,
-h6::before
-    content "#";
-    margin-right 0.5em;
-    color #3C3C3C;
+h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
+    content: '#';
+    margin-right: 0.5em;
+    color: #3C3C3C;
+}
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6
-    font-weight bold;
-    margin 1em auto;
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin: 1em auto;
+}
 
-ul
-    list-style disc inside;
+ul {
+    list-style: disc inside;
+}
 
-ol
-    list-style upper-greek inside;
+ol {
+    list-style: upper-greek inside;
+}
 
-ul,ol
-    margin 1em;
+ul, ol {
+    margin: 1rem;
+}
 
-#top
-    width 50px;
-    height 80px;
-    background rgba(161, 161, 161, 0, 5) none repeat;
-    position fixed;
-    bottom 5%;
-    right 3%;
-    text-align center;
-    cursor pointer;
-    a
-        display block;
-        font-size 18px;
-        line-height 40px;
-        color #3C3C3C;
-        text-decoration none;
-    a:hover
-        background-color #B6B6B6;
+#top {
+    width: 50px;
+    height: 80px;
+    background: rgba(161, 161, 161, 0, 5) none repeat;
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    text-align: center;
+    cursor: pointer;
+
+    a {
+        display: block;
+        font-size: 18px;
+        line-height: 40px;
+        color: #3C3C3C;
+        text-decoration: none;
+    }
+
+    a:hover {
+        background-color: #B6B6B6;
+    }
+}
+
+code {
+    font-family: 'Source Code Pro', monospace;
+}

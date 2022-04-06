@@ -1,19 +1,55 @@
 /*公共样式--开始*/
-html, body, div, ul, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, form, input, textarea, th, td, select {
+html,
+body,
+div,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+dt,
+dd,
+ol,
+form,
+input,
+textarea,
+th,
+td,
+select {
     margin: 0;
     padding: 0;
 }
-*{box-sizing: border-box;}
-html, body {
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
     min-height: 100%;
 }
 
 body {
-    font-size:14px;
-    color:#333;
+    font-size: 14px;
+    color: #333;
 }
-h1, h2, h3, h4, h5, h6{font-weight:normal;}
-ul,ol {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+ul,
+ol {
     list-style: none;
 }
 
@@ -32,7 +68,8 @@ table {
     table-layout: fixed;
 }
 
-input, textarea {
+input,
+textarea {
     outline: none;
     border: none;
 }
@@ -53,7 +90,7 @@ textarea {
     visibility: hidden;
     display: block;
     clear: both;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .fl {
@@ -81,7 +118,8 @@ textarea {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.inline{
+
+.inline {
     display: inline-block;
     *display: inline;
     *zoom: 1;

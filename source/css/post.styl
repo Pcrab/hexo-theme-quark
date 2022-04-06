@@ -1,51 +1,67 @@
-@import "_partial/comment.styl"
-post
-  a
-    color #D14E4E;
-.post_title
-  font bold 2.3em "Noto Sans SC", sans-serif;
-  text-align: center;
+@import '_partial/comment.styl';
 
-.post_title:after
-  content '';
-  display block;
-  margin 0.2em auto 0;
-  width 100px;
-  height 2px;
-  border-bottom 2px dashed #D14E4E;
+post {
+    a {
+        color: #D14E4E;
+    }
+}
 
-#post_content
-    font-size 1.2em;
-    font-family "Noto Sans SC", sans-serif;
-    img
-        margin 0 10% 0 10%;
-        max-width 80%;
-
-h1
-    font-weight bold;
-    font-size 2em;
-
-h2
-    font-weight bold;
-    font-size 1.8em;
-
-h3
-    font-weight bold;
-    font-size 1.6em;
-
-h4
-    font-weight bold;
-    font-size 1.3em;
-
-.busuanzi
-    font-weight bold
-
-.hljs-ln-numbers
+.post_title {
+    font: bold 2.3rem 'Noto Sans SC', sans-serif;
     text-align: center;
-    color: #ccc;
-    vertical-align: top;
-    border-right: 1px solid #CCC;
+}
 
-.hljs-ln-code
-    padding-left 1em !important;
+.post_title:after {
+    content: '';
+    display: block;
+    margin: 0.2em auto 0;
+    width: 100px;
+    height: 2px;
+    border-bottom: 2px dashed #D14E4E;
+}
 
+#post_content {
+    font-size: 1.2rem;
+    font-family: 'Noto Sans SC', sans-serif;
+
+    img {
+        margin: 0 10% 0 10%;
+        max-width: 80%;
+    }
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.busuanzi {
+    font-weight: bold;
+}
+
+pre, .highlight {
+    margin: 1rem 0;
+    padding-left: 0.5rem;
+    overflow: auto;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+pre code.hljs {
+    padding: 0;
+}

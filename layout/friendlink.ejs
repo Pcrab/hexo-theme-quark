@@ -7,7 +7,7 @@
 
 <div class="friendlink">
   <% theme.friendlink.links.forEach(function(link){%>
-    <a href="<%- link.url %>" class="flink_link">
+  <a href="<%- link.url %>" class="flink_link">
     <div class="flink_block">
 
       <div class="flink_word">
@@ -21,7 +21,7 @@
       <div class="flink_cover"><img class="flink_img" src="<%- link.cover %>"></div>
 
     </div>
-    </a>
+  </a>
   <% }) %>
 </div>
 <%- partial('_partial/comment') %>

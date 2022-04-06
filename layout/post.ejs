@@ -5,29 +5,34 @@
     <%- page.title %>
   </div>
 
-  <br/><br/>
-
-  <% if (theme.syntax.enable) { %>
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.2/build/styles/<%= theme.syntax.theme %>.min.css">
-  <script src="/js/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-  <% if (theme.syntax.enable) { %>
-    <script src="//cdn.jsdelivr.net/npm/highlightjs-line-numbers.js/dist/highlightjs-line-numbers.min.js"></script>
-    <script>hljs.initLineNumbersOnLoad();</script>
-  <% } %>
-  <% } %>
+  <br /><br />
 
   <div id="post_content">
     <%- page.content %>
   </div>
 
-  <br/>
+  <% if (config.highlight.enable) { %>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/default.min.css">
+  <% } else if (config.prismjs.enable) { %>
+
+  <%- css('css/utils/prism') %> 
+
+  <% if (!config.prismjs.preprocess) { %>
+  <%- js('js/prism.js') %>
+  <% } %>
+
+  <% } %>
+
+  <br />
 
   <% if (theme.busuanzi.enable) { %>
-    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <span id="busuanzi_container_site_pv"><%= __("post.busuanzi.visit") %><span id="busuanzi_value_page_pv"></span><%= __("post.busuanzi.time") %></span>
+  <!-- <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
+  <span id="busuanzi_container_site_pv">
+    <%= __("post.busuanzi.visit") %><span id="busuanzi_value_page_pv"></span>
+    <%= __("post.busuanzi.time") %>
+  </span>
   <% } %>
-  <br/><br/>
+  <br /><br />
 
 
   <%- partial('_partial/copyright') %>

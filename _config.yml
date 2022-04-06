@@ -13,17 +13,14 @@ dark: false
 # 作者简介，内容会显示在 about 页面上
 # author descriptions, all these information will be displayed on about page
 author:
-  name: "Pcrab"
-  self_intro: "一个普通的大学生，爱好计算机，懒"
-  social:
-    github: "pcrab"
-    email: "pcrab@pcrab.xyz"
-    telegram: "Pcrab"
-    instagram: ""
-    twitter: ""
-    weibo: ""
-    zhihu: ""
-    youtube: ""
+  github: "pcrab"
+  email: "pcrab@pcrab.xyz"
+  telegram: "Pcrab"
+  instagram: ""
+  twitter: ""
+  weibo: ""
+  zhihu: ""
+  youtube: ""
 
 # 目前仅提供cc协议
 # currently only proviede cc
@@ -41,9 +38,8 @@ copyright:
 # 使用的是 highlight.js 的 xcode 主题，我只选配了我个人使用的一些语言，建议根据自己的需要在 https://highlightjs.org/download/ 中选择自己需要的并替换 js 文件
 # Using highlight.js xcode theme, and I only select some of my using languages. It is highly recommended to select your own languages on https://highlightjs.org/download/ and replace the default js file.
 syntax:
-  enable: true
+  enable: false
   theme: xcode
-  linenumber: true
 
 comment:
   # 在此选择要使用的评论系统
@@ -72,8 +68,8 @@ comment:
   LiveRe:
     datauid: blabla
   Gitalk:
-    clientID: 
-    clientSecret: 
+    clientID:
+    clientSecret:
     owner:
     repo:
   # 需要自建,或付费使用官方版本（有试用）
@@ -83,15 +79,22 @@ comment:
     # Please use your domain if you are self hosted. If you use the cloud service, the domain is https://cdn.commento.io, with no / at the end
     domain: https://commento.pcrab.xyz
 
-
-
 # 友链
 # friendlink
 friendlink:
   enable: true
   links:
-    - { name: "LJY's Blog", url: "https://blog.ljyngup.com", cover: "https://ljyngupdownload.oss-cn-hangzhou.aliyuncs.com/2018/07/LJYblog-300x300.jpg"}
-    - { name: "Sukoshi", url: "https://sukoshi.xyz/", desc: "十八岁基层程序猿想做涩影狮", cover: "https://s.gravatar.com/avatar/2d6b803eea37de0257620d5fabee7e64?s=200&r=g&d=retro" }
+    - {
+        name: "LJY's Blog",
+        url: "https://blog.ljyngup.com",
+        cover: "https://ljyngupdownload.oss-cn-hangzhou.aliyuncs.com/2018/07/LJYblog-300x300.jpg",
+      }
+    - {
+        name: "Sukoshi",
+        url: "https://sukoshi.xyz/",
+        desc: "十八岁基层程序猿想做涩影狮",
+        cover: "https://s.gravatar.com/avatar/2d6b803eea37de0257620d5fabee7e64?s=200&r=g&d=retro",
+      }
 
 # 网站成立时间，若大于等于当前年份则不会显示
 # The start year of the site which won't be shown if is beyond current
@@ -104,7 +107,7 @@ showTheme: true
 # 不蒜子网页统计
 # busuanzi
 busuanzi:
-  enable: true
+  enable: false
 
 # 备案
 beian:

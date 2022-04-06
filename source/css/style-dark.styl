@@ -1,90 +1,100 @@
-@import "_partial/title"
-@import "_partial/footer"
-@import "_partial/list"
-@import "_partial/navi"
-@import "_partial/copyright"
+@import '_partial/title';
+@import '_partial/footer';
+@import '_partial/list';
+@import '_partial/navi';
+@import '_partial/copyright';
 
-a
-    color #C0C5CE;
-    text-decoration none;
-a:hover
-    color #FF4848
+a {
+    color: #C0C5CE;
+    text-decoration: none;
+}
 
-blockquote
-    margin 0.3em 0;
-    padding 0.1em 2em;
-    border-left 0.6em #D14E4E solid;
-    background-color #65737E;
+a:hover {
+    color: #FF4848;
+}
 
-html
-    background #2B303B;
-    color #C0C5CE;
+blockquote {
+    margin: 0.3em 0;
+    padding: 0.1em 2em;
+    border-left: 0.6em #D14E4E solid;
+    background-color: #65737E;
+}
 
-body
-    font normal 100% "Noto Sans SC", Helvetica, Arial, sans-serif
-    word-wrap break-word;
-    margin 5% 10% 0 10%;
-    height 100%;
+html {
+    background: #2B303B;
+    color: #C0C5CE;
+}
 
-.main
-    height 100%;
-    margin 5% 15% 0 15%;
-    font-family "Noto Sans SC";
-    a
-        font normal 1.6em "Noto Sans SC", sans-serif;
+body {
+    font: normal 100% 'Noto Sans SC', Helvetica, Arial, sans-serif;
+    word-wrap: break-word;
+    margin: 5% 10% 0 10%;
+    height: 100%;
+}
 
+.main {
+    height: 100%;
+    margin: 5% 15% 0 15%;
+    font-family: 'Noto Sans SC';
 
-@media all and (max-width: 700px)
-    body
-        font-size 80%;
-        margin 0;
+    a {
+        font: normal 1.6em 'Noto Sans SC', sans-serif;
+    }
+}
 
-h1::before,
-h2::before,
-h3::before,
-h4::before,
-h5::before,
-h6::before
-    content "#";
-    margin-right 0.5em;
+@media all and (max-width: 700px) {
+    body {
+        font-size: 80%;
+        margin: 0;
+    }
+}
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6
-    font-weight bold;
-    margin 1em auto;
+h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
+    content: '#';
+    margin-right: 0.5em;
+}
 
-ul
-    list-style disc inside;
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin: 1em auto;
+}
 
-ol
-    list-style upper-greek inside;
+ul {
+    list-style: disc inside;
+}
 
-ul,ol
-    margin 1em;
+ol {
+    list-style: upper-greek inside;
+}
 
+ul, ol {
+    margin: 1em;
+}
 
-#local-search-input
+#local-search-input {
     background-color: #2B303B;
-    color: #C0C5CE
+    color: #C0C5CE;
+}
 
-#top
-    width 50px;
-    height 80px;
-    background rgba(161, 161, 161, 0, 5) none repeat;
-    position fixed;
-    bottom 5%;
-    right 3%;
-    text-align center;
-    cursor pointer;
-    a
-        display block;
-        font-size 18px;
-        line-height 40px;
-        color #3C3C3C;
-        text-decoration none;
-    a:hover
-        background-color #B6B6B6;
+#top {
+    width: 50px;
+    height: 80px;
+    background: rgba(161, 161, 161, 0, 5) none repeat;
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    text-align: center;
+    cursor: pointer;
+
+    a {
+        display: block;
+        font-size: 18px;
+        line-height: 40px;
+        color: #3C3C3C;
+        text-decoration: none;
+    }
+
+    a:hover {
+        background-color: #B6B6B6;
+    }
+}
