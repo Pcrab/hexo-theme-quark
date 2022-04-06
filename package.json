@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "Pcrab",
-  "license": "GPL-3.0"
+  "license": "GPL-3.0",
+  "dependencies": {
+    "hexo-generator-feed": "^3.0.0",
+    "hexo-generator-search": "^2.4.3"
+  }
 }
