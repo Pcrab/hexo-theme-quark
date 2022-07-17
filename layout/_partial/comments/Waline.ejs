@@ -1,15 +1,24 @@
-<script src="//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js"></script>
+<script src="https://unpkg.com/@waline/client@v2/dist/waline.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/@waline/client@v2/dist/waline.css"
+  />
 <div id="waline"></div>
 <script>
-  Waline({
+  Waline.init({
     el: '#waline',
-    serverURL: "<%- theme.comment.Waline.serverURL %>",
-    visitor: "<%- theme.comment.Waline.visitor %>",
+    serverURL: "<%- config.comment.waline.serverUrl %>",
+    visitor: "<%- config.comment.waline.visitor %>",
     lang: "<%- config.language%>",
   });
 </script>
 <style>
-  .vpanel {
+  .wl-panel {
     background: transparent !important;
+    margin: 2rem 0 0;
+  }
+  .wl-input,
+  .wl-editor {
+    --waline-bgcolor-light: transparent;
   }
 </style>
