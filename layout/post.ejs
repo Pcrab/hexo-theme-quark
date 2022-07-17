@@ -11,17 +11,18 @@
     <%- page.content %>
   </div>
 
-  <% if (config.highlight.enable) { %>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/default.min.css">
-  <% } else if (config.prismjs.enable) { %>
-
-  <%- css('css/utils/prism') %> 
-
-  <% if (!config.prismjs.preprocess) { %>
-  <%- js('js/prism.js') %>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+  <% if (page.languages) { %> 
+  <% page.languages.forEach(function(language) { %>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/<%= language %>.min.js"></script>
+  <% }) %>
   <% } %>
-
-  <% } %>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
+  <script>
+    hljs.highlightAll();
+    hljs.initLineNumbersOnLoad();
+  </script>
 
   <br />
 
