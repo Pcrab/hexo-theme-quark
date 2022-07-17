@@ -1,6 +1,15 @@
 <%- css('css/post') %>
 <post>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+  <% if (page.languages) { %> 
+  <% page.languages.forEach(function(language) { %>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/<%= language %>.min.js"></script>
+  <% }) %>
+  <% } %>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
+
   <div class="post_title">
     <%- page.title %>
   </div>
@@ -10,19 +19,6 @@
   <div id="post_content">
     <%- page.content %>
   </div>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
-  <% if (page.languages) { %> 
-  <% page.languages.forEach(function(language) { %>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/<%= language %>.min.js"></script>
-  <% }) %>
-  <% } %>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
-  <script>
-    hljs.highlightAll();
-    hljs.initLineNumbersOnLoad();
-  </script>
 
   <br />
 
@@ -39,5 +35,10 @@
   <%- partial('_partial/copyright') %>
   <%- partial('_partial/top') %>
   <%- partial('_partial/comment') %>
+
+  <script>
+    hljs.highlightAll();
+    hljs.initLineNumbersOnLoad();
+  </script>
 
 </post>
