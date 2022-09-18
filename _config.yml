@@ -34,7 +34,7 @@ copyright:
 comment:
   # 在此选择要使用的评论系统
   # Please select Disqus or Valine
-  Select: Waline
+  Select:
   # 请访问 https://valine.js.org/ 并按照教程来配置使用 Valine 评论系统
   # Please visit https://valine.js.org/ to lean how to get appid and appkey
   Valine:
