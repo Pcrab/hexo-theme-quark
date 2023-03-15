@@ -6,8 +6,8 @@
   <% if (page.languages) { %> 
   <% page.languages.forEach(function(language) { %>
     <% if (language === "solidity") { %>
-      <script src="/js/solidity.min.js"></script>"
-      <script src="/js/yul.min.js"></script>"
+      <script src="/js/solidity.min.js"></script>
+      <script src="/js/yul.min.js"></script>
     <% } else { %>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/<%= language %>.min.js"></script>
     <% } %>
