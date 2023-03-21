@@ -9,9 +9,9 @@ icon: icon.png
 # 作者简介，内容会显示在 about 页面上
 # author descriptions, all these information will be displayed on about page
 author:
-  github: "pcrab"
-  email: "pcrab@pcrab.xyz"
-  telegram: "Pcrab"
+  github: "username"
+  email: "username@example.com"
+  telegram: "username"
   instagram: ""
   twitter: ""
   weibo: ""
@@ -46,14 +46,14 @@ comment:
   # 推荐使用 Disqus
   # Recommended
   Disqus:
-    shortname: pcrab-blog
+    shortname: example_name
     # 如果需要代理，请访问 https://github.com/fooleap/disqus-php-api 来参考配置
     # 注意，要使用代理，你首先需要一台能够访问 Disqus 的服务器
     # If you need proxy, please visit https://github.com/fooleap/disqus-php-api to learn how to do so
     # Important: you need a VPS which can connect to Disqus
     needProxy: false
-    # 此处填写你的反代服务器的域名。请自行搭建，我的是不能直接让你用的。
-    # here is your proxy server's domain. Please use your own server, don't directly use mine, as its impossible for you to use
+    # 此处填写你的反代服务器的域名。请自行搭建，
+    # here is your proxy server's domain.
     proxyUrl: https://disqus.example.com
   LiveRe:
     datauid: blabla
