@@ -68,6 +68,21 @@ comment:
     # 输入自建时使用的域名，如果使用的是官方版本，应为https://cdn.commento.io，最后不要加斜杠
     # Please use your domain if you are self hosted. If you use the cloud service, the domain is https://cdn.commento.io, with no / at the end
     domain: https://commento.example.com
+  # 参阅 https://giscus.app/zh-CN 以获取更多信息
+  # Visit https://giscus.app/ form more details
+  Giscus:
+    repo: user/repo
+    repoId: R_repoId
+    category: Announcements
+    categoryId: DIC_categoryId
+    mapping: title
+    strict: 1
+    reactionEnabled: 1
+    emitMetadata: 1
+    inputPosition: top
+    theme: light
+    lang: en
+    loading: lazy
 
 # 友链
 # friendlink
