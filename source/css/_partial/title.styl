@@ -3,25 +3,30 @@
 }
 
 .title_img {
-  width: 20%;
+  width: 300px;
+  height: auto;
 }
 
 #site_title {
-  margin: 0 0 0.8em 0;
-  font: bold 2em sans-serif;
+  height: 3rem;
+  font: bold 2rem sans-serif;
+  line-height: 3rem;
   color: #D14E4E;
+  margin-bottom: 1rem;
 }
 
 #site_title::before {
+  margin-right: 1rem;
   content: '< ';
 }
 
 #site_title::after {
+  margin-left: 1rem;
   content: ' >';
 }
 
 @media all and (max-width: 500px) {
   .title_img {
-    width: 35%;
+    width: 150px;
   }
 }
