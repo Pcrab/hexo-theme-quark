@@ -7,15 +7,19 @@
     </div>
   </div>
 
-  <a id="index_post_title" href="/<%- post.path %>"><%- post.title %></a><br />
+  <div id="index_post_title">
+    <a href="/<%- post.path %>"><%- post.title %></a>
+  </div>
 
+  <% if(post.tags.length > 0) { %>
   <div class="blank">
     <% post.tags.forEach(function(tag){ %>
-    <a class="index_post_tag" href="/tags/<%- tag.name %>">
+    <div class="index_post_tag"><a href="/tags/<%- tag.name %>">
       <%- tag.name %>
-    </a>
+    </a></div>
     <% }) %>
   </div>
+  <% } %>
 
   <div class="index_post_excerpt">
     <%- post.excerpt %>

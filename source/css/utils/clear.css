@@ -34,11 +34,6 @@ body {
     min-height: 100%;
 }
 
-body {
-    font-size: 14px;
-    color: #333;
-}
-
 h1,
 h2,
 h3,
@@ -56,11 +51,6 @@ ol {
 img {
     border: none;
     vertical-align: middle;
-}
-
-a {
-    text-decoration: none;
-    color: #232323;
 }
 
 table {
@@ -94,11 +84,11 @@ textarea {
 }
 
 .fl {
-    float: left
+    float: left;
 }
 
 .fr {
-    float: right
+    float: right;
 }
 
 .tl {
@@ -106,7 +96,7 @@ textarea {
 }
 
 .tc {
-    text-align: center
+    text-align: center;
 }
 
 .tr {
