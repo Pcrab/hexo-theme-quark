@@ -4,13 +4,32 @@
     <%- page.title %> - <% } %>
     <%= config.title %>
   </title>
+  <meta property="og:title" content="<% if(page.title){ %><%- page.title %> - <% } %><%= config.title %>" />
+  <meta property="og:site_name" content="<%= config.title %>" />
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <% if (config.description) { %>
+  <meta name="description" content="<%= config.description %>">
+  <meta property="og:description" content="<%= config.description %>" />
+  <% } %>
+
+  <meta property="og:type" content="article" />
+
 
   <% if (theme.favicon){ %>
   <link rel="shortcut icon" href="/<%- theme.favicon %>" />
   <% } %>
 
+  <% if (theme.author.twitter) { %>
+  <meta name="twitter:site" content="@<%= theme.author.twitter %>">
+  <meta name="twitter:creator" content="@<%= theme.author.twitter %>">
+  <% } %>
+
+  <% let fullurl = full_url_for(page.path).endsWith("index.html") ? full_url_for(page.path).slice(0, -10) : full_url_for(page.path) %>
+  <link rel="canonical" href="<%= fullurl %>">
+  <meta name="og:url" content="<%= fullurl %>">
   <%- css('css/style') %>
 
 </head>
