@@ -1,22 +1,15 @@
 <% if (1 == theme.copyright.open || ( 2 == theme.copyright.open && page.copyright) ) { %>
 
-<div class="copyright">
+<div id="copyright">
 
-  <a class="license-image" rel="license" href="http://creativecommons.org/licenses/by
-<% if ( 0 == theme.copyright.commercial ) { %>-nc<% } %>
-<% if ( 0 == theme.copyright.derivative ) { %>-nd<% } else if ( 1 == theme.copyright.derivative ) { %>-sa<% } %>
-/4.0/"><img height="15" width="80" alt="<%= __("cc.main") %> <%= __("cc.by") %><% if ( 0 == theme.copyright.commercial ) { %>-<%= __("cc.nc") %><% } %><% if ( 0 == theme.copyright.derivative ) { %>-<%= __("cc.nd") %><% } else if ( 1 == theme.copyright.derivative ) { %>-<%= __("cc.sa") %><% } %> <%= __("cc.lend") %>" style="border-width:0" src="https://i.creativecommons.org/l/by
-<% if ( 0 == theme.copyright.commercial ) { %>-nc<% } %>
-<% if ( 0 == theme.copyright.derivative ) { %>-nd<% } else if ( 1 == theme.copyright.derivative ) { %>-sa<% } %>
-/4.0/80x15.png" />
+  <a id="license-image" rel="license" href="http://creativecommons.org/licenses/by<% if ( 0 == theme.copyright.commercial ) { %>-nc<% } %><% if ( 0 == theme.copyright.derivative ) { %>-nd<% } else if ( 1 == theme.copyright.derivative ) { %>-sa<% } %>/4.0/"><img height="15" width="80" alt="<%= __("cc.main") %> <%= __("cc.by") %><% if ( 0 == theme.copyright.commercial ) { %>-<%= __("cc.nc") %><% } %><% if ( 0 == theme.copyright.derivative ) { %>-<%= __("cc.nd") %><% } else if ( 1 == theme.copyright.derivative ) { %>-<%= __("cc.sa") %><% } %> <%= __("cc.lend") %>" style="border-width:0" src="https://i.creativecommons.org/l/by<% if ( 0 == theme.copyright.commercial ) { %>-nc<% } %><% if ( 0 == theme.copyright.derivative ) { %>-nd<% } else if ( 1 == theme.copyright.derivative ) { %>-sa<% } %>/4.0/80x15.png" />
   </a>
 
-  <p><%= __("cc.front") %>
-    <a class="license-word-hyper" rel="license" href="http://creativecommons.org/licenses/by
-<% if ( 0 == theme.copyright.commercial ) { %>-nc<% } %>
-<% if ( 0 == theme.copyright.derivative ) { %>-nd<% } else if ( 1 == theme.copyright.derivative ) { %>-sa<% } %>
-/4.0/">
-      <%= __("cc.main") %> <%= __("cc.by") %><% if ( 0 == theme.copyright.commercial ) { %>-<%= __("cc.nc") %><% } %><% if ( 0 == theme.copyright.derivative ) { %>-<%= __("cc.nd") %><% } else if ( 1 == theme.copyright.derivative ) { %>-<%= __("cc.sa") %><% } %> <%= __("cc.lend") %></a> <%= __("cc.end") %>
+  <p id="license-word-hyper">
+    <%= __("cc.front") %>
+    <a rel="license" href="http://creativecommons.org/licenses/by<% if ( 0 == theme.copyright.commercial ) { %>-nc<% } %><% if ( 0 == theme.copyright.derivative ) { %>-nd<% } else if ( 1 == theme.copyright.derivative ) { %>-sa<% } %>/4.0/">
+    <%= __("cc.main") %> <%= __("cc.by") %><% if ( 0 == theme.copyright.commercial ) { %>-<%= __("cc.nc") %><% } %><% if ( 0 == theme.copyright.derivative ) { %>-<%= __("cc.nd") %><% } else if ( 1 == theme.copyright.derivative ) { %>-<%= __("cc.sa") %><% } %> <%= __("cc.lend") %></a>
+    <%= __("cc.end") %>
   </p>
 </div>
 <% } %>
