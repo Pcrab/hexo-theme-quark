@@ -76,23 +76,34 @@ ul, ol {
 
 #top {
     width: 50px;
-    height: 80px;
-    background: rgba(161, 161, 161, 0, 5) none repeat;
+    // height: 80px;
+    background-color: rgb(222, 219, 219);
+    border-radius: 1rem;
     position: fixed;
     bottom: 5%;
     right: 3%;
     text-align: center;
-    cursor: pointer;
 
-    a {
+    div {
         display: block;
         font-size: 18px;
         line-height: 40px;
         color: #3C3C3C;
         text-decoration: none;
+        cursor: pointer;
+
+        &:first-child {
+            border-top-left-radius: 1rem 1rem;
+            border-top-right-radius: 1rem 1rem;
+        }
+
+        &:last-child {
+            border-bottom-left-radius: 1rem 1rem;
+            border-bottom-right-radius: 1rem 1rem;
+        }
     }
 
-    a:hover {
+    div:hover {
         background-color: #B6B6B6;
     }
 }
